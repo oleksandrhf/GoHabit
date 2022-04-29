@@ -1,0 +1,8 @@
+{
+    "title": "GoHabit",
+    "identifier": "com.yourcompany.wizardEVAP.GoHabit",
+    "orientation": "auto",
+    "versioncode": 1,
+    "versionname": "1.0",
+    "stage": "test"
+}
