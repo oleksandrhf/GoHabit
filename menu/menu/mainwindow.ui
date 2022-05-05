@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>236</width>
-    <height>357</height>
+    <width>233</width>
+    <height>436</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+    <item alignment="Qt::AlignHCenter|Qt::AlignTop">
      <widget class="QLabel" name="label">
       <property name="font">
        <font>
@@ -29,19 +29,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Notification</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="pushButton_3">
       <property name="font">
        <font>
@@ -51,6 +38,19 @@
       </property>
       <property name="text">
        <string>Achievements</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Notification</string>
       </property>
      </widget>
     </item>
@@ -76,9 +76,9 @@
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>60</y>
+         <y>90</y>
          <width>51</width>
-         <height>41</height>
+         <height>21</height>
         </rect>
        </property>
        <property name="text">
@@ -88,10 +88,10 @@
       <widget class="QPushButton" name="pushButton_2">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>60</y>
+         <x>130</x>
+         <y>90</y>
          <width>51</width>
-         <height>41</height>
+         <height>21</height>
         </rect>
        </property>
        <property name="text">
@@ -107,7 +107,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>236</width>
+     <width>233</width>
      <height>17</height>
     </rect>
    </property>
