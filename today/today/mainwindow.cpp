@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this); // design form
-}
+}// create test
 
 MainWindow::~MainWindow()
 {
