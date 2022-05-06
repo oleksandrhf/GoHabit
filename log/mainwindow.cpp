@@ -132,7 +132,7 @@ void MainWindow::display() //показ вікна авторизації при
 bool MainWindow::connectDB()   // підключення бази даних до проекту
 {
     mw_db = QSqlDatabase::addDatabase("QSQLITE");
-    mw_db.setDatabaseName("./authorisation.db");
+    mw_db.setDatabaseName("./db_GoHabit.db");
     if(!mw_db.open())
     {
         qDebug() << "Cannot open database: " << mw_db.lastError();
@@ -143,5 +143,5 @@ bool MainWindow::connectDB()   // підключення бази даних д�
 
 void MainWindow::wipeDB() //видалення бази
 {
-    mw_db.removeDatabase("./authorisation.db");
+    mw_db.removeDatabase("./db_GoHabit.db");
 }
