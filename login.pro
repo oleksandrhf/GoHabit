@@ -14,7 +14,6 @@ SOURCES += \
     dataset.cpp \
     main.cpp \
     mainwindow.cpp \
-    menu.cpp \
     reg_window.cpp
     auth_window.cpp
     reg_window.cpp
@@ -24,7 +23,6 @@ HEADERS += \
     auth_window.h \
     dataset.h \
     mainwindow.h \
-    menu.h \
     reg_window.h
     auth_window.h
     reg_window.h
@@ -33,7 +31,6 @@ FORMS += \
     addhabit.ui \
     auth_window.ui \
     mainwindow.ui \
-    menu.ui \
     reg_window.ui
     auth_window.ui
     reg_window.ui
