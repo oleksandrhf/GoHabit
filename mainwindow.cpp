@@ -77,7 +77,7 @@ void MainWindow::authorizeUser()
         ui_Auth.close();
         ui_Reg.close();
         this->show();
-
+        ui_Main->label->setText("welcome ");
     }
 }
 
