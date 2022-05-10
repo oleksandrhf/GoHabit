@@ -6,6 +6,7 @@
 #include "auth_window.h"
 #include <QtSql/QtSql>
 #include "reg_window.h"
+#include "menu.h"
 
 
 
@@ -27,12 +28,14 @@ public:
     int Get_user_id();
 signals:
     void butt_clicked();
+    void on_pushButton_3_clicked();
 
 
 private:
     Ui::MainWindow *ui_Main;
     auth_window ui_Auth;
     reg_window ui_Reg;
+    menu ui_menu;
     QString m_username;
     QString m_userpass;
     QString m_login;
