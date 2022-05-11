@@ -32,6 +32,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
   <widget class="QLineEdit" name="confirmLineEdit">
    <property name="geometry">
@@ -41,6 +44,9 @@
      <width>113</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QPushButton" name="registerPushButton">

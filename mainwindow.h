@@ -6,6 +6,7 @@
 #include "auth_window.h"
 #include <QtSql/QtSql>
 #include "reg_window.h"
+#include "addhabit.h"
 
 
 
@@ -24,15 +25,12 @@ public:
     void display();
     bool connectDB();
     void wipeDB();
-    int Get_user_id();
-signals:
-    void butt_clicked();
-
 
 private:
     Ui::MainWindow *ui_Main;
     auth_window ui_Auth;
     reg_window ui_Reg;
+    AddHabit ah;
     QString m_username;
     QString m_userpass;
     QString m_login;
@@ -45,7 +43,7 @@ private slots:
     void registerWindowShow();
     void registerUser();
     void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
+    void on_go_back();
 };
 
 #endif // MAINWINDOW_H
