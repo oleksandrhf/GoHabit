@@ -166,6 +166,13 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_3_clicked()
 {
     ui_menu.show();
+    this->hide();
 
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+            this->show();
 }
 

@@ -28,7 +28,7 @@ public:
     int Get_user_id();
 signals:
     void butt_clicked();
-    void on_pushButton_3_clicked();
+
 
 
 private:
@@ -49,6 +49,7 @@ private slots:
     void registerUser();
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
+    void on_pushButton_3_clicked();
 };
 
 #endif // MAINWINDOW_H
