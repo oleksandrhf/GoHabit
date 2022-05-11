@@ -16,5 +16,6 @@ menu::~menu()
 void menu::on_pushButton_2_clicked()
 {
 
+ this->hide();
 }
 
