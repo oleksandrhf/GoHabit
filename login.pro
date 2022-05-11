@@ -9,34 +9,32 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    createhabit.cpp \
     addhabit.cpp \
     auth_window.cpp \
     dataset.cpp \
     main.cpp \
-    mainwindow.cpp \
     menu.cpp \
-    reg_window.cpp
-    auth_window.cpp
-    reg_window.cpp
+    mainwindow.cpp \
+    reg_window.cpp \
 
 HEADERS += \
+    menu.h \
+    createhabit.h \
     addhabit.h \
     auth_window.h \
     dataset.h \
     mainwindow.h \
-    menu.h \
-    reg_window.h
-    auth_window.h
     reg_window.h
 
 FORMS += \
+    menu.ui \
+    createhabit.ui \
     addhabit.ui \
     auth_window.ui \
     mainwindow.ui \
-    menu.ui \
-    reg_window.ui
-    auth_window.ui
-    reg_window.ui
+    reg_window.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
