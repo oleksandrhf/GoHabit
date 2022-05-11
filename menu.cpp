@@ -12,3 +12,9 @@ menu::~menu()
 {
     delete ui;
 }
+
+void menu::on_pushButton_2_clicked()
+{
+
+}
+

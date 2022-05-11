@@ -2,7 +2,6 @@
 #define MENU_H
 
 #include <QWidget>
-
 namespace Ui {
 class menu;
 }
@@ -15,8 +14,12 @@ public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::menu *ui;
+
 };
 
 #endif // MENU_H
