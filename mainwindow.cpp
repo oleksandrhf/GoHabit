@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "auth_window.h"
 #include "reg_window.h"
-#include "menu.h"
+#include "dataset.h"
 
 
 
@@ -13,14 +13,24 @@ MainWindow::MainWindow(QWidget *parent) :
     user_counter = 0;
 
     m_loginSuccesfull = false;
+    connect(&ah, SIGNAL(backed()),
+            this, SLOT(on_go_back()));
+
+    connect(&ah, SIGNAL(backed()),
+            this, SLOT(on_go_back()));
+
     connect(&ui_Auth, SIGNAL(login_button_clicked()),
             this, SLOT(authorizeUser()));
+
     connect(&ui_Auth,SIGNAL(destroyed()),
             this, SLOT(show()));
+
     connect(&ui_Auth,SIGNAL(register_button_clicked()),
             this,SLOT(registerWindowShow()));
+
     connect(&ui_Reg,SIGNAL(register_button_clicked2()),
             this,SLOT(registerUser()));
+
     connect(&ui_Reg,SIGNAL(destroyed()),
             &ui_Auth, SLOT(show()));//Сигнали на спрацьовування кнопок
     if(!connectDB())
@@ -34,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 void MainWindow::authorizeUser()
 {
-
+    Singleton* s1 = Singleton::getInstance();
     m_username          = ui_Auth.getLogin();
     m_userpass          = ui_Auth.getPass();   //зчитування з форми
 
@@ -61,6 +71,9 @@ void MainWindow::authorizeUser()
     username    = query.value(rec.indexOf("name")).toString();
     userpass    = query.value(rec.indexOf("password")).toString();
     login       = query.value(rec.indexOf("email")).toString();  //зчитування з бази
+
+
+
     if(m_username != username || m_userpass != userpass)         //порівняння на правильність
     {
         qDebug() << "Password missmatch" << username << " " << userpass;
@@ -68,17 +81,13 @@ void MainWindow::authorizeUser()
     }
     else
     {
-        QString fg = "'";
-
-        str_t = " SELECT * "
-                " FROM Users "
-                " WHERE name = " + fg + username + fg;
-
+        s1->SetThisUserId(user_counter);
+        QString s = QString::number(user_counter);
         m_loginSuccesfull = true;
         ui_Auth.close();
         ui_Reg.close();
         this->show();
-        ui_Main->label->setText("welcome ");
+        ui_Main->label->setText("welcome " + s);
     }
 }
 
@@ -150,29 +159,17 @@ void MainWindow::wipeDB() //видалення бази
 
 
 
- int MainWindow::Get_user_id()
- {
-     return user_counter;
- }
-
 void MainWindow::on_pushButton_clicked()
 {
-    emit butt_clicked();
+    this->close();
+    ah.show();
 }
 
-
-
-
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_go_back()
 {
-    ui_menu.show();
-    this->hide();
-
+    this->show();
+    ah.hide();
 }
 
 
-void MainWindow::on_pushButton_2_clicked()
-{
-            this->show();
-}
 
