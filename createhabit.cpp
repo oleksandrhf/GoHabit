@@ -66,3 +66,4 @@ void CreateHabit::on_pushButton_2_clicked()
     emit back_clicked();
 }
 
+>>>>>>> main
