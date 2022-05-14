@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: #E5E5E5;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -35,7 +38,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>260</x>
       <y>10</y>
       <width>91</width>
       <height>71</height>
@@ -49,10 +52,19 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>539</y>
+      <y>540</y>
       <width>361</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">position: absolute;
+width: 362px;
+height: 83.02px;
+left: -2px;
+top: 571px;
+
+background: #C4C4C4;</string>
     </property>
     <property name="title">
      <string/>
@@ -66,6 +78,21 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">position: absolute;
+width: 87px;
+height: 23.12px;
+left: 56px;
+top: 621.44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;</string>
+     </property>
      <property name="text">
       <string>Today</string>
      </property>
@@ -78,6 +105,21 @@
        <width>51</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">position: absolute;
+width: 87px;
+height: 23.12px;
+left: 56px;
+top: 621.44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;</string>
      </property>
      <property name="text">
       <string>Menu</string>

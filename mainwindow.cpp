@@ -33,6 +33,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(&ui_Reg,SIGNAL(destroyed()),
             &ui_Auth, SLOT(show()));
+    connect(&ui_menu,SIGNAL(menuTodayButton()),
+           this, SLOT(show()));
 
     //Сигнали на спрацьовування кнопок
     if(!connectDB())
@@ -172,18 +174,13 @@ void MainWindow::on_go_back()
     this->show();
     ah.hide();
 }
-
-
-
-void MainWindow::on_pushButton_2_clicked()
-{
-    this->hide();
-}
-
-
 void MainWindow::on_menuButton_clicked()
 {
     this->hide();
-    ui_menu.show();
+ui_menu.show();
+}
+void MainWindow::menuTodayButton()
+{
+this->hide();
 }
 
