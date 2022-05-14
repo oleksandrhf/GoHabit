@@ -32,7 +32,9 @@ MainWindow::MainWindow(QWidget *parent) :
             this,SLOT(registerUser()));
 
     connect(&ui_Reg,SIGNAL(destroyed()),
-            &ui_Auth, SLOT(show()));//Сигнали на спрацьовування кнопок
+            &ui_Auth, SLOT(show()));
+
+    //Сигнали на спрацьовування кнопок
     if(!connectDB())
     {
         qDebug() << "Failed to connect DB";
@@ -172,4 +174,16 @@ void MainWindow::on_go_back()
 }
 
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    this->hide();
+}
+
+
+void MainWindow::on_menuButton_clicked()
+{
+    this->hide();
+    ui_menu.show();
+}
 

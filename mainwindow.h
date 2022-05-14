@@ -31,6 +31,7 @@ private:
     Ui::MainWindow *ui_Main;
     auth_window ui_Auth;
     reg_window ui_Reg;
+    menu ui_menu;
     AddHabit ah;
     QString m_username;
     QString m_userpass;
@@ -45,6 +46,8 @@ private slots:
     void registerUser();
     void on_pushButton_clicked();
     void on_go_back();
+    void on_pushButton_2_clicked();
+    void on_menuButton_clicked();
 };
 
 #endif // MAINWINDOW_H

@@ -37,7 +37,7 @@ background: #C4C4C4;</string>
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="menuToday">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -65,7 +65,7 @@ color: #000000;</string>
      <string>Today</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="menuButton2">
     <property name="geometry">
      <rect>
       <x>230</x>
