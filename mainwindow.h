@@ -46,8 +46,8 @@ private slots:
     void registerUser();
     void on_pushButton_clicked();
     void on_go_back();
-    void on_pushButton_2_clicked();
     void on_menuButton_clicked();
+    void menuTodayButton();
 };
 
 #endif // MAINWINDOW_H
