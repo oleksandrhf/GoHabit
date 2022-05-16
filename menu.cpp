@@ -18,7 +18,7 @@ menu::~menu()
 
 void menu::on_menuToday_clicked()
 {
-    emit menuTodayButton();
-
+   emit menuTodayButton();
+    this->hide();
 }
 

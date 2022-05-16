@@ -182,7 +182,7 @@ ui_menu.show();
 }
 void MainWindow::menuTodayButton()
 {
-this->show();
-    ui_menu.hide();
+     ui_menu.hide();
+    this->show();
 }
 
