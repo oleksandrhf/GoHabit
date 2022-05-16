@@ -48,6 +48,7 @@ private slots:
     void on_go_back();
     void on_menuButton_clicked();
     void menuTodayButton();
+
 };
 
 #endif // MAINWINDOW_H
