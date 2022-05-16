@@ -36,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&ui_menu,SIGNAL(menuTodayButton()),
            this, SLOT(show()));
 
+
     //Сигнали на спрацьовування кнопок
     if(!connectDB())
     {
@@ -181,6 +182,7 @@ ui_menu.show();
 }
 void MainWindow::menuTodayButton()
 {
-this->hide();
+this->show();
+    ui_menu.hide();
 }
 
