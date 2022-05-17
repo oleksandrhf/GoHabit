@@ -55,3 +55,11 @@ void menu::on_backSettings_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+
+
+
+void menu::on_menuButton2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
