@@ -3,6 +3,7 @@
 #include "auth_window.h"
 #include "reg_window.h"
 #include "dataset.h"
+#include "timecheck.h"
 
 
 
@@ -11,8 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui_Main(new Ui::MainWindow)
 {
     user_counter = 0;
-
     m_loginSuccesfull = false;
+    connect(&M, SIGNAL(Today_clicked()),
+            this, SLOT(todayClicked()));
+
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
 
@@ -33,14 +36,31 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(&ui_Reg,SIGNAL(destroyed()),
             &ui_Auth, SLOT(show()));//Сигнали на спрацьовування кнопок
+    if(ui_Main->checkBox->isChecked())
+    {
+        QDateTime T;
+        DT = T.currentDateTime();
+    }
     if(!connectDB())
     {
         qDebug() << "Failed to connect DB";
     }
    ui_Main->setupUi(this);
+
 }
 
+void MainWindow::SetCheckTime(int id, QDateTime T)
+{
 
+    QSqlQuery query;
+    QString str_t;
+    str_t               =   "UPDATE User_Habits SET check_time = ";
+    str_t.append(T.toString());
+    str_t.append(" WHERE ");
+    str_t.append("id_habit = ");
+    str_t.append(QString::number(id));
+    query.exec(str_t);
+}
 
 void MainWindow::authorizeUser()
 {
@@ -87,7 +107,6 @@ void MainWindow::authorizeUser()
         ui_Auth.close();
         ui_Reg.close();
         this->show();
-        ui_Main->label->setText("welcome " + s);
     }
 }
 
@@ -161,6 +180,8 @@ void MainWindow::wipeDB() //видалення бази
 
 void MainWindow::on_pushButton_clicked()
 {
+    TimeCheck T;
+
     this->close();
     ah.show();
 }
@@ -171,5 +192,18 @@ void MainWindow::on_go_back()
     ah.hide();
 }
 
+void MainWindow::todayClicked()
+{
+    this->show();
+    M.hide();
+}
 
+
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    M.show();
+    this->hide();
+}
 

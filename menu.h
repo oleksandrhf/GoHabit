@@ -14,6 +14,8 @@ class menu : public QWidget
 public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
+signals:
+    void Today_clicked();
 
 private slots:
     void on_pushButton_2_clicked();
