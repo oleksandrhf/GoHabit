@@ -19,3 +19,12 @@ int Singleton::GetHabitId()
 {
     return habitId;
 }
+void Singleton::SettimeOfCheck(QDateTime T)
+{
+    timeOfCheck = T;
+}
+QDateTime Singleton::GettimeOfCheck()
+{
+    return timeOfCheck;
+}
+

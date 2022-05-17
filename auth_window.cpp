@@ -1,6 +1,7 @@
 #include "auth_window.h"
 #include "ui_auth_window.h"
 
+
 auth_window::auth_window(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::auth_window)
@@ -34,6 +35,7 @@ void auth_window::on_register_pushButton_2_clicked()
 
 void auth_window::on_login_PushButton_clicked()
 {
+
     emit login_button_clicked();
 }
 
