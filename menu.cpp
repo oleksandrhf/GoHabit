@@ -22,3 +22,36 @@ void menu::on_menuToday_clicked()
     this->hide();
 }
 
+
+void menu::on_pushButton_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+void menu::on_pushButton_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+void menu::on_pushButton_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+void menu::on_backAchieve_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void menu::on_backNotificat_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void menu::on_backSettings_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
