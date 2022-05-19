@@ -13,7 +13,7 @@ AddHabit::AddHabit(QWidget *parent) :
             this, SLOT(on_back_clicked()));
 
     connect(&c_habit, SIGNAL(new_habit_added()),
-            this, SLOT(on_habit_created())); //підключення до кнопок
+            this, SLOT(on_habit_created()));
 
     ui->setupUi(this);
     showHabitsInCombobox();
