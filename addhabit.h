@@ -20,12 +20,6 @@ namespace Ui {
 class AddHabit;
 }
 
-
-
-
-
-
-
 class AddHabit : public QWidget
 {
     Q_OBJECT
