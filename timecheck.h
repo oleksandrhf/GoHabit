@@ -4,7 +4,7 @@
 #include <QDateTime>
 #include <QtSql/QtSql>
 
-class TimeCheck
+class TimeCheck : public QObject
 {
 private:
     QDate currDate();
@@ -14,8 +14,7 @@ public:
     void SetcurrDate();
     QDate GetcurrDate();
     void AddToProgress(bool value, int id_Habit);
-    void DateChecker(int id_Habit, bool value);
-
+    void DateCheck(int id_Habit, bool value);
 };
 
 #endif // TIMECHECK_H
