@@ -15,7 +15,11 @@ public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
 signals:
+
+    void Today_clicked();
+
     void menuTodayButton();
+
 private slots:
 
     void on_menuToday_clicked();

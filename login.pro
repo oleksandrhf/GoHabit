@@ -1,3 +1,4 @@
+
 QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -17,6 +18,7 @@ SOURCES += \
     menu.cpp \
     mainwindow.cpp \
     reg_window.cpp \
+    timecheck.cpp
 
 HEADERS += \
     menu.h \
@@ -25,7 +27,8 @@ HEADERS += \
     auth_window.h \
     dataset.h \
     mainwindow.h \
-    reg_window.h
+    reg_window.h \
+    timecheck.h
 
 FORMS += \
     menu.ui \
@@ -40,6 +43,3 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    pick.qrc

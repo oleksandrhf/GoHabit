@@ -25,6 +25,9 @@ void menu::on_menuToday_clicked()
 
 void menu::on_pushButton_clicked()
 {
+
+    emit Today_clicked();
+
     ui->stackedWidget->setCurrentIndex(1);
 }
 
@@ -61,5 +64,6 @@ void menu::on_backSettings_clicked()
 void menu::on_menuButton2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
+
 }
 
