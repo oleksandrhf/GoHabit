@@ -39,7 +39,13 @@ MainWindow::MainWindow(QWidget *parent) :
             this,SLOT(registerUser()));
 
     connect(&ui_Reg,SIGNAL(destroyed()),
-            &ui_Auth, SLOT(show()));//Сигнали на спрацьовування кнопок
+
+            &ui_Auth, SLOT(show()));
+    connect(&ui_menu,SIGNAL(menuTodayButton()),
+           this, SLOT(show()));
+
+
+    //Сигнали на спрацьовування кнопок
 
     if(!connectDB())
     {
@@ -227,6 +233,7 @@ void MainWindow::showAllHabits()
     P;
 }
 
+
 void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
 {
     ui_Main->groupBox->setVisible(v1);
@@ -383,6 +390,18 @@ void MainWindow::on_checkBox_4_stateChanged(int arg1)
 void MainWindow::on_checkBox_5_stateChanged(int arg1)
 {
     TC.DateCheck(5, ui_Main->checkBox_5->isChecked());
+}
+
+
+void MainWindow::on_menuButton_clicked()
+{
+    this->hide();
+ui_menu.show();
+}
+void MainWindow::menuTodayButton()
+{
+     ui_menu.hide();
+    this->show();
 }
 
 

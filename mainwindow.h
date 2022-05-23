@@ -42,6 +42,7 @@ private:
     auth_window ui_Auth;
     menu M;
     reg_window ui_Reg;
+    menu ui_menu;
     AddHabit ah;
     QString m_username;
     QString m_userpass;
@@ -58,6 +59,7 @@ private slots:
     void registerUser();
     void on_pushButton_clicked();
     void on_go_back();
+
     void todayClicked();
     void on_pushButton_2_clicked();
     void on_checkBox_stateChanged(int arg1);
@@ -65,6 +67,11 @@ private slots:
     void on_checkBox_3_stateChanged(int arg1);
     void on_checkBox_4_stateChanged(int arg1);
     void on_checkBox_5_stateChanged(int arg1);
+
+    void on_menuButton_clicked();
+    void menuTodayButton();
+
+
 };
 
 #endif // MAINWINDOW_H
