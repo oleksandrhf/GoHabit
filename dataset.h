@@ -1,6 +1,7 @@
 #ifndef DATASET_H
 #define DATASET_H
 #include <QString>
+#include <QDateTime>
 
 class Singleton
 {
@@ -11,6 +12,7 @@ class Singleton
     Singleton& operator=( Singleton& );
     int thisUserId;
     int habitId;
+    QDateTime timeOfCheck;
   public:
     static Singleton * getInstance() {
         if(!p_instance)
@@ -19,6 +21,8 @@ class Singleton
     }
     void SetThisUserId(int S);
     int GetThisUserId();
+    void SettimeOfCheck(QDateTime T);
+    QDateTime GettimeOfCheck();
     void SetHabitId(int S);
     int GetHabitId();
 };
