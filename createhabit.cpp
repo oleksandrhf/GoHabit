@@ -57,7 +57,7 @@ void CreateHabit::on_pushButton_clicked()
 void CreateHabit::on_horizontalSlider_valueChanged(int value)
 {
     QString s = QString::number(ui->horizontalSlider->value());
-    ui->label_2->setText("number of days - " + s);
+    ui->label_2->setText("Number of days: " + s);
 }
 
 
