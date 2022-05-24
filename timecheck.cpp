@@ -1,3 +1,4 @@
+
 #include "timecheck.h"
 
 
@@ -68,3 +69,4 @@ void TimeCheck::DateCheck(int id_user_Habit, bool value)
         query.exec(str_t);
     }
 }
+

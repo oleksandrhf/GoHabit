@@ -1,6 +1,8 @@
+
 <RCC>
     <qresource prefix="/img">
         <file>pick/Back.png</file>
         <file>pick/Save.png</file>
     </qresource>
 </RCC>
+
