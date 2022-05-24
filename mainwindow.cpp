@@ -201,15 +201,6 @@ void MainWindow::on_go_back()
     visibleCheck();
 }
 
-//void MainWindow::todayClicked()
-//{
-//    this->show();
-//    M.hide();
-//}
-
-
-
-
 void MainWindow::on_pushButton_2_clicked()
 {
     this->show();
