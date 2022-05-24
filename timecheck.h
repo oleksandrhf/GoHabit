@@ -1,4 +1,3 @@
-
 #ifndef TIMECHECK_H
 #define TIMECHECK_H
 
