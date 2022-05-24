@@ -243,6 +243,51 @@ void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
     ui_Main->groupBox_5->setVisible(v5);
 }
 
+=======
+}
+
+void MainWindow::todayClicked()
+{
+    this->show();
+    M.hide();
+}
+
+
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    M.show();
+    this->hide();
+}
+
+void MainWindow::showAllHabits()
+{
+    QSqlQuery query;
+    QSqlRecord rec;
+    QString str_t;
+    int P;
+    str_t = "SELECT id_habit "
+            "FROM User_Habits"
+            " WHERE id_user = ";
+    str_t.append(QString::number(user_counter));
+    str_t.append(";");
+    query.exec(str_t);
+     query.next();
+    P = query.value(0).toInt();
+    P;
+}
+
+
+void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
+{
+    ui_Main->groupBox->setVisible(v1);
+    ui_Main->groupBox_2->setVisible(v2);
+    ui_Main->groupBox_3->setVisible(v3);
+    ui_Main->groupBox_4->setVisible(v4);
+    ui_Main->groupBox_5->setVisible(v5);
+}
+
 
  void MainWindow::AddToProgress(QProgressBar * pb, QLabel* W, QCheckBox * CB,  int index)
  {
