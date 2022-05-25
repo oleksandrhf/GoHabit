@@ -29,7 +29,7 @@
     <string notr="true">background: #E5E5E5;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="Menu_page">
     <widget class="QPushButton" name="pushButton">
@@ -1058,6 +1058,9 @@ background: #4E944F;</string>
        <bool>true</bool>
       </property>
      </widget>
+     <zorder>label_4</zorder>
+     <zorder>label_21</zorder>
+     <zorder>backSettings</zorder>
     </widget>
    </widget>
   </widget>
