@@ -45,15 +45,10 @@
       <string notr="true">
 /* CSS */
 QPushButton {
-  appearance: none;
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
   font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
   font-size: 14px;
   font-weight: 600;
@@ -62,9 +57,6 @@ QPushButton {
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -78,21 +70,14 @@ QPushButton:hover {
   background-color: #2c974b;
 }
 
-QPushButton:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
 QPushButton:disabled {
   background-color: #94d3a2;
   border-color: rgba(27, 31, 35, .1);
   color: rgba(255, 255, 255, .8);
-  cursor: default;
 }
 
 .QPushButton:active {
   background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }</string>
      </property>
      <property name="text">
@@ -112,15 +97,10 @@ QPushButton:disabled {
       <string notr="true">
 /* CSS */
 QPushButton {
-  appearance: none;
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
   font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
   font-size: 14px;
   font-weight: 600;
@@ -129,9 +109,6 @@ QPushButton {
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -145,21 +122,14 @@ QPushButton:hover {
   background-color: #2c974b;
 }
 
-QPushButton:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
 QPushButton:disabled {
   background-color: #94d3a2;
   border-color: rgba(27, 31, 35, .1);
   color: rgba(255, 255, 255, .8);
-  cursor: default;
 }
 
 .QPushButton:active {
   background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }</string>
      </property>
      <property name="text">
@@ -179,15 +149,10 @@ QPushButton:disabled {
       <string notr="true">
 /* CSS */
 QPushButton {
-  appearance: none;
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
   font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
   font-size: 14px;
   font-weight: 600;
@@ -196,9 +161,6 @@ QPushButton {
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -212,21 +174,14 @@ QPushButton:hover {
   background-color: #2c974b;
 }
 
-QPushButton:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
 QPushButton:disabled {
   background-color: #94d3a2;
   border-color: rgba(27, 31, 35, .1);
   color: rgba(255, 255, 255, .8);
-  cursor: default;
 }
 
 .QPushButton:active {
   background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }</string>
      </property>
      <property name="text">
