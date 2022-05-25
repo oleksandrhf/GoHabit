@@ -17,8 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 
-    connect(&M, SIGNAL(Today_clicked()),
-            this, SLOT(todayClicked()));
 
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));

@@ -59,15 +59,12 @@ private slots:
     void registerUser();
     void on_pushButton_clicked();
     void on_go_back();
-
-    void todayClicked();
     void on_pushButton_2_clicked();
     void on_checkBox_stateChanged(int arg1);
     void on_checkBox_2_stateChanged(int arg1);
     void on_checkBox_3_stateChanged(int arg1);
     void on_checkBox_4_stateChanged(int arg1);
     void on_checkBox_5_stateChanged(int arg1);
-
     void on_menuButton_clicked();
     void menuTodayButton();
 
