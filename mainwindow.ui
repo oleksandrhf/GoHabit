@@ -28,406 +28,6 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>321</width>
-      <height>441</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>319</width>
-       <height>439</height>
-      </rect>
-     </property>
-     <widget class="QGroupBox" name="groupBox_2">
-      <property name="geometry">
-       <rect>
-        <x>11</x>
-        <y>112</y>
-        <width>297</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-background-color: rgb(170, 170, 255);</string>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>63</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_2">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>21</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>10</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QProgressBar" name="progressBar_2">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="value">
-        <number>24</number>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>200</y>
-        <width>297</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>63</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_3">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>21</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_5">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>20</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QProgressBar" name="progressBar_3">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="value">
-        <number>24</number>
-       </property>
-      </widget>
-      <zorder>progressBar_3</zorder>
-      <zorder>label_4</zorder>
-      <zorder>pushButton_5</zorder>
-      <zorder>checkBox_3</zorder>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>280</y>
-        <width>297</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>63</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_4">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>21</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_6">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>20</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QProgressBar" name="progressBar_4">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="value">
-        <number>24</number>
-       </property>
-      </widget>
-      <zorder>label_5</zorder>
-      <zorder>checkBox_4</zorder>
-      <zorder>progressBar_4</zorder>
-      <zorder>pushButton_6</zorder>
-     </widget>
-     <widget class="QGroupBox" name="groupBox_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>360</y>
-        <width>297</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>63</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox_5">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>21</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>20</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QProgressBar" name="progressBar_5">
-       <property name="geometry">
-        <rect>
-         <x>40</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="value">
-        <number>24</number>
-       </property>
-      </widget>
-      <zorder>progressBar_5</zorder>
-      <zorder>checkBox_5</zorder>
-      <zorder>label_6</zorder>
-      <zorder>pushButton_7</zorder>
-     </widget>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>297</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="title">
-       <string/>
-      </property>
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>63</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="checkBox">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>21</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>10</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-      <widget class="QProgressBar" name="progressBar">
-       <property name="geometry">
-        <rect>
-         <x>50</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="value">
-        <number>24</number>
-       </property>
-      </widget>
-     </widget>
-    </widget>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
@@ -655,9 +255,406 @@ background: #4E944F;</string>
      </property>
     </widget>
    </widget>
-   <zorder>groupBox</zorder>
-   <zorder>groupBox_6</zorder>
-   <zorder>scrollArea</zorder>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>321</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>319</width>
+       <height>439</height>
+      </rect>
+     </property>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>297</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_4">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>21</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <zorder>label_5</zorder>
+      <zorder>checkBox_4</zorder>
+      <zorder>progressBar_4</zorder>
+      <zorder>pushButton_6</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>297</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_5">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>21</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <zorder>progressBar_5</zorder>
+      <zorder>checkBox_5</zorder>
+      <zorder>label_6</zorder>
+      <zorder>pushButton_7</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>297</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Чорний</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>21</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>10</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>297</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>21</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <zorder>progressBar_3</zorder>
+      <zorder>label_4</zorder>
+      <zorder>pushButton_5</zorder>
+      <zorder>checkBox_3</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>297</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(170, 170, 255);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Фіолетовий</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>21</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>10</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources>

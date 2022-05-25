@@ -219,7 +219,7 @@ void MainWindow::showAllHabits()
     query.exec(str_t);
      query.next();
     P = query.value(0).toInt();
-    P;
+
 }
 
 
