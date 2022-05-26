@@ -51,6 +51,7 @@ private slots:
     void on_back_clicked();
     void on_Add_habit_button_clicked();
     void on_pushButton_4_clicked();
+    void on_pushButton_2_clicked();
 };
 
 #endif // ADDHABIT_H

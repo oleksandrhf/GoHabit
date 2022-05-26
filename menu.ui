@@ -14,16 +14,19 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: #E5E5E5;</string>
+   <string notr="true">background-color: #B4E197;</string>
   </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>361</width>
-     <height>641</height>
+     <width>360</width>
+     <height>640</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
     <number>0</number>
@@ -39,26 +42,43 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">position: absolute;
-width: 322px;
-height: 73px;
-left: 20px;
-top: 123px;
+      <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
-background: #C4C4C4;
-position: absolute;
-width: 226px;
-height: 74px;
-left: 107px;
-top: 140px;
+QPushButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
+QPushButton:hover {
+  background-color: #2c974b;
+}
 
-color: #000000;</string>
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
      </property>
      <property name="text">
       <string>Achievements</string>
@@ -74,26 +94,43 @@ color: #000000;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">position: absolute;
-width: 322px;
-height: 73px;
-left: 20px;
-top: 123px;
+      <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
-background: #C4C4C4;
-position: absolute;
-width: 226px;
-height: 74px;
-left: 107px;
-top: 140px;
+QPushButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
+QPushButton:hover {
+  background-color: #2c974b;
+}
 
-color: #000000;</string>
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
      </property>
      <property name="text">
       <string>Notification</string>
@@ -109,26 +146,43 @@ color: #000000;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">position: absolute;
-width: 322px;
-height: 73px;
-left: 20px;
-top: 123px;
+      <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
-background: #C4C4C4;
-position: absolute;
-width: 226px;
-height: 74px;
-left: 107px;
-top: 140px;
+QPushButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
+QPushButton:hover {
+  background-color: #2c974b;
+}
 
-color: #000000;</string>
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
      </property>
      <property name="text">
       <string>Settings</string>
@@ -157,7 +211,7 @@ font-size: 25px;
 line-height: 30px;
 
 color: #000000;
-background: #969696;</string>
+background: #4E944F;</string>
      </property>
      <property name="text">
       <string>Menu</string>
@@ -179,7 +233,7 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #969696;
+background: #4E944F;
 </string>
      </property>
      <property name="title">
@@ -202,7 +256,7 @@ height: 83.02px;
 left: -2px;
 top: 571px;
 
-background: #C4C4C4;</string>
+background: #4E944F;</string>
      </property>
      <property name="title">
       <string/>
@@ -210,26 +264,19 @@ background: #C4C4C4;</string>
      <widget class="QPushButton" name="menuButton2">
       <property name="geometry">
        <rect>
-        <x>250</x>
+        <x>240</x>
         <y>20</y>
         <width>61</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">position: absolute;
-width: 87px;
-height: 23.12px;
-left: 56px;
-top: 621.44px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 18px;
-
-color: #000000;</string>
+       <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;
+text-align: bottom;</string>
       </property>
       <property name="text">
        <string>Menu</string>
@@ -238,31 +285,66 @@ color: #000000;</string>
      <widget class="QPushButton" name="menuToday">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>20</y>
+        <x>40</x>
+        <y>10</y>
         <width>61</width>
-        <height>31</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">position: absolute;
-width: 87px;
-height: 23.12px;
-left: 56px;
-top: 621.44px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 18px;
-
-color: #000000;</string>
+       <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;
+text-align: bottom;</string>
       </property>
       <property name="text">
        <string>Today</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>0</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/pick/pick/Menu.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/pick/pick/Today.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+     <zorder>menuButton2</zorder>
+     <zorder>menuToday</zorder>
     </widget>
     <zorder>pushButton</zorder>
     <zorder>pushButton_4</zorder>
@@ -288,8 +370,7 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #969696;
-</string>
+background: #4E944F;</string>
      </property>
      <property name="title">
       <string/>
@@ -299,7 +380,7 @@ background: #969696;
        <rect>
         <x>100</x>
         <y>10</y>
-        <width>171</width>
+        <width>161</width>
         <height>31</height>
        </rect>
       </property>
@@ -317,7 +398,7 @@ font-size: 25px;
 line-height: 30px;
 
 color: #000000;
-background: #969696;</string>
+background: #4E944F;</string>
       </property>
       <property name="text">
        <string>Achievements</string>
@@ -326,31 +407,469 @@ background: #969696;</string>
      <widget class="QPushButton" name="backAchieve">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>0</x>
         <y>10</y>
-        <width>41</width>
+        <width>51</width>
         <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">position: absolute;
-width: 115px;
+       <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>label_19</zorder>
+     <zorder>backAchieve</zorder>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>50</y>
+       <width>361</width>
+       <height>640</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E9EFC0;
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>359</width>
+        <height>638</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+       </property>
+       <property name="text">
+        <string>Photo</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">width: 148px;
 height: 37px;
-left: 126px;
-top: 5px;
+left: 115px;
+top: 147px;
 
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;</string>
+       </property>
+       <property name="text">
+        <string>Ви відкрили 0 з 5 досягнень</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
 font-size: 10px;
-line-height: 30px;
+line-height: 18px;
 
 color: #000000;
-background: #969696;</string>
-      </property>
-      <property name="text">
-       <string>&lt;-Back</string>
-      </property>
+</string>
+        </property>
+        <property name="text">
+         <string>First Habit</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>190</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+
+color: #000000;
+</string>
+        </property>
+        <property name="text">
+         <string>Five Habits</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>190</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+
+color: #000000;
+</string>
+        </property>
+        <property name="text">
+         <string>Ten Habits</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>340</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+
+color: #000000;
+</string>
+        </property>
+        <property name="text">
+         <string>New Habit</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>340</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string>Photo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>41</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+
+color: #000000;
+</string>
+        </property>
+        <property name="text">
+         <string>Half way</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_15">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>0</y>
+         <width>231</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: #E9EFC0;</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <zorder>groupBox_15</zorder>
+      <zorder>label_5</zorder>
+      <zorder>label_6</zorder>
+      <zorder>groupBox_6</zorder>
+      <zorder>groupBox_7</zorder>
+      <zorder>groupBox_8</zorder>
+      <zorder>groupBox_9</zorder>
+      <zorder>groupBox_10</zorder>
      </widget>
     </widget>
    </widget>
@@ -371,8 +890,7 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #969696;
-</string>
+background: #4E944F;</string>
      </property>
      <property name="title">
       <string/>
@@ -382,7 +900,7 @@ background: #969696;
        <rect>
         <x>120</x>
         <y>10</y>
-        <width>171</width>
+        <width>141</width>
         <height>31</height>
        </rect>
       </property>
@@ -400,7 +918,7 @@ font-size: 25px;
 line-height: 30px;
 
 color: #000000;
-background: #969696;</string>
+background: #4E944F;</string>
       </property>
       <property name="text">
        <string>Notifications</string>
@@ -409,32 +927,45 @@ background: #969696;</string>
      <widget class="QPushButton" name="backNotificat">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>10</y>
-        <width>41</width>
+        <width>51</width>
         <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">position: absolute;
-width: 115px;
-height: 37px;
-left: 126px;
-top: 5px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 30px;
-
-color: #000000;
-background: #969696;</string>
+       <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>&lt;-Back</string>
+       <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_3</zorder>
+     <zorder>label_20</zorder>
+     <zorder>backNotificat</zorder>
     </widget>
    </widget>
    <widget class="QWidget" name="Settings_page">
@@ -454,8 +985,7 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #969696;
-</string>
+background: #4E944F;</string>
      </property>
      <property name="title">
       <string/>
@@ -483,7 +1013,7 @@ font-size: 25px;
 line-height: 30px;
 
 color: #000000;
-background: #969696;</string>
+background: #4E944F;</string>
       </property>
       <property name="text">
        <string>Settings</string>
@@ -499,29 +1029,44 @@ background: #969696;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">position: absolute;
-width: 115px;
-height: 37px;
-left: 126px;
-top: 5px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 30px;
-
-color: #000000;
-background: #969696;</string>
+       <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
       </property>
       <property name="text">
-       <string>&lt;-Back</string>
+       <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_4</zorder>
+     <zorder>label_21</zorder>
+     <zorder>backSettings</zorder>
     </widget>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

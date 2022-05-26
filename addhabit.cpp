@@ -109,6 +109,7 @@ void AddHabit::addHabit()
                .arg(det_days())
                .arg(ui->timeEdit->time().toString())
                .arg(0));
+
 }
 
 
@@ -147,6 +148,12 @@ void AddHabit::on_Add_habit_button_clicked()
 
 
 void AddHabit::on_pushButton_4_clicked()
+{
+    emit backed();
+}
+
+
+void AddHabit::on_pushButton_2_clicked()
 {
     emit backed();
 }

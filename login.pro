@@ -14,13 +14,16 @@ SOURCES += \
     addhabit.cpp \
     auth_window.cpp \
     dataset.cpp \
+    dropmenu.cpp \
     main.cpp \
     menu.cpp \
     mainwindow.cpp \
     reg_window.cpp \
-    timecheck.cpp
+    timecheck.cpp \
+    edit.cpp
 
 HEADERS += \
+    dropmenu.h \
     menu.h \
     createhabit.h \
     addhabit.h \
@@ -28,18 +31,24 @@ HEADERS += \
     dataset.h \
     mainwindow.h \
     reg_window.h \
-    timecheck.h
+    timecheck.h \
+    edit.h
 
 FORMS += \
+    dropmenu.ui \
     menu.ui \
     createhabit.ui \
     addhabit.ui \
     auth_window.ui \
     mainwindow.ui \
     reg_window.ui \
+    edit.ui
 
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc

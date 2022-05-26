@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img/pick">
+        <file>pick/Back.png</file>
+        <file>pick/Menu.png</file>
+        <file>pick/Save.png</file>
+        <file>pick/Today.png</file>
+        <file>pick/points.png</file>
+    </qresource>
+</RCC>
