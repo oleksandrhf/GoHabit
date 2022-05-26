@@ -14,6 +14,15 @@ MainWindow::MainWindow(QWidget *parent) :
     user_counter = 5;
     m_loginSuccesfull = false;
 
+    connect(this , SIGNAL(delete_pressed(i)),
+            this, SLOT(on_habit_deleted(i)));
+
+    connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
+            this, SLOT(on_checkboxblocked(id_user_Habit)));
+
+    connect(&ah, SIGNAL(backed()),
+            this, SLOT(on_go_back()));
+      
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
 
@@ -227,7 +236,6 @@ void MainWindow::SetVisible()
     arrayOfId[2] != 0 ? ui_Main->groupBox_3->setVisible(true) : ui_Main->groupBox_3->setVisible(false);
     arrayOfId[3] != 0 ? ui_Main->groupBox_4->setVisible(true) : ui_Main->groupBox_4->setVisible(false);
     arrayOfId[4] != 0 ? ui_Main->groupBox_5->setVisible(true) : ui_Main->groupBox_5->setVisible(false);
-
 }
 
 
@@ -390,7 +398,6 @@ void MainWindow::menuTodayButton()
     this->show();
 }
 
-
 void MainWindow::on_pushButton_3_clicked()
 {
     if(ui_Main->widget->isVisible() == false)
@@ -490,5 +497,58 @@ void MainWindow::FillarrOfId()
             correctHabitsCounter++;
         }
     }
+}
+
+
+void MainWindow::on_habit_deleted(int i)
+{
+    QSqlQuery query;
+    QString str_t;
+    str_t = "DELETE "
+            "FROM User_Habits "
+            "WHERE id_user_habit = ";
+    str_t.append(QString::number(arrayOfId[i]));
+    str_t.append(";");
+    query.exec(str_t);
+    FillarrOfId();
+    visibleCheck();
+    HideMenu();
+}
+
+
+
+void MainWindow::on_pushButton_11_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    on_habit_deleted(0);
+}
+
+
+void MainWindow::on_pushButton_13_clicked()
+{
+    on_habit_deleted(1);
+}
+
+
+void MainWindow::on_pushButton_15_clicked()
+{
+    on_habit_deleted(2);
+}
+
+
+void MainWindow::on_pushButton_17_clicked()
+{
+    on_habit_deleted(3);
+}
+
+
+void MainWindow::on_pushButton_19_clicked()
+{
+    on_habit_deleted(4);
 }
 

@@ -79,6 +79,21 @@ private slots:
     void on_pushButton_6_clicked();
     void on_pushButton_7_clicked();
     void FillarrOfId();
+    void on_habit_deleted(int i);
+    void on_pushButton_11_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_13_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_pushButton_19_clicked();
+
+signals:
+    void delete_pressed(int i);
 };
 
 #endif // MAINWINDOW_H
