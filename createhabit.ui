@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-  <string notr="true">background:#E9EFC0;</string>
+   <string notr="true"/>
   </property>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
@@ -28,7 +28,7 @@
    <property name="styleSheet">
     <string notr="true">QLineEdit {
 border-radius: 10px;
-background-color: #83BD75 ;
+background-color: #c4c4c4 ;
 border:2px solid #0d0d0d;
 }
 
@@ -112,16 +112,13 @@ border-radius: 4px;
 }</string>
    </property>
    <property name="minimum">
-    <number>1</number>
+    <number>3</number>
    </property>
    <property name="maximum">
-    <number>365</number>
+    <number>72</number>
    </property>
    <property name="singleStep">
     <number>4</number>
-   </property>
-   <property name="value">
-    <number>21</number>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -130,22 +127,14 @@ border-radius: 4px;
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>570</y>
-     <width>231</width>
-     <height>41</height>
+     <x>80</x>
+     <y>500</y>
+     <width>131</width>
+     <height>20</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: #000000;</string>
-   </property>
    <property name="text">
-    <string notr="true">Number of days: 21</string>
+    <string notr="true">Number of days: 1</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
@@ -165,7 +154,7 @@ border-radius: 4px;
    <property name="styleSheet">
     <string notr="true">QTextEdit {
 border-radius: 6px;
-background-color: #83BD75 ;
+background-color: #c4c4c4 ;
 border:0.5px solid #0d0d0d;
 }</string>
    </property>
@@ -196,7 +185,10 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #4E944F;
+background: #969696;
+
+
+
 </string>
    </property>
    <property name="title">
@@ -235,7 +227,23 @@ background: #4E944F;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>  
+     <pixmap resource="recources.qrc">:/img/pick/Save.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recources.qrc">:/img/pick/Back.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -258,59 +266,10 @@ background: #4E944F;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_21">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>10</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">position: absolute;
-width: 115px;
-height: 37px;
-left: 126px;
-top: 5px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 30px;
-
-color: #000000;
-background: #4E944F;</string>
-    </property>
-    <property name="text">
-     <string>Create habit</string>
-    </property>
-   </widget>
-   <zorder>label_21</zorder>
+   <zorder>label_5</zorder>
    <zorder>label_4</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
-   <zorder>label_5</zorder>
   </widget>
   <widget class="Line" name="line_2">
    <property name="geometry">
@@ -327,82 +286,6 @@ background: #4E944F;</string>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: medium none;
-  background-image: none; 
-  background: transparent;
-  float: left;
-  background-color: transparent;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/img/pick/Save.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/img/pick/Back.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: medium none;
-  background-image: none; 
-  background: transparent;
-  float: left;
-  background-color: transparent;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <zorder>label_5</zorder>
-   <zorder>label_4</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
   </widget>
   <widget class="Line" name="line_3">
    <property name="geometry">
@@ -420,54 +303,6 @@ background: #4E944F;</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>100</y>
-     <width>37</width>
-     <height>12</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: #000000;</string>
-   </property>
-   <property name="text">
-    <string>Name:</string>
-   </property>
-  </widget>
-  <widget class="Line" name="line_3">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>220</y>
-     <width>81</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: #000000;</string>
-   </property>
-   <property name="text" stdset="0">
-    <string>Description:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>510</y>
-     <width>211</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>12354</string>
-   </property>
-   <property name="text">
-    <string>(We recommend 21 days)</string>
-   </property>
-  </widget>
  </widget>
  <tabstops>
   <tabstop>horizontalSlider</tabstop>
@@ -477,7 +312,8 @@ background: #4E944F;</string>
   <tabstop>pushButton_2</tabstop>
  </tabstops>
  <resources>
-  <include location="resources.qrc"/>
+  <include location="recources.qrc"/>
  </resources>
  <connections/>
 </ui>
+

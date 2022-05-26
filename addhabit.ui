@@ -45,7 +45,9 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton {
+    <string notr="true">
+/* CSS */
+QPushButton {
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
@@ -60,11 +62,6 @@
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-QPushButton:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
 }
 
 QPushButton:hover {
@@ -90,7 +87,7 @@ QPushButton:disabled {
     <rect>
      <x>9</x>
      <y>170</y>
-     <width>341</width>
+     <width>373</width>
      <height>42</height>
     </rect>
    </property>
@@ -325,45 +322,6 @@ background-color:#2A64BB;
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>361</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">Background-color: #4E944F</string>
-   </property>
-
-   <property name="text">
-    <string>New Habit</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>61</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
@@ -388,25 +346,6 @@ background-color:#2A64BB;
    </property>
    <property name="text">
     <string>Chose a habit</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>0</y>
-     <width>61</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -435,69 +374,112 @@ background-color:#2A64BB;
     <string>Chose a habit</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>61</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border: medium none;
-  background-image: none; 
-  background: transparent;
-  float: left;
-  background-color: transparent;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="flat">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>0</y>
-     <width>61</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="add_button">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>0</y>
-     <width>61</width>
+     <width>361</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border: medium none;
+    <string notr="true">position: absolute;
+width: 360px;
+height: 65px;
+left: 0px;
+top: 0px;
+
+background: #4E944F;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: medium none;
   background-image: none; 
   background: transparent;
   float: left;
   background-color: transparent;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_button">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_6</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>label_2</zorder>
+   <zorder>add_button</zorder>
   </widget>
-  <zorder>pushButton_4</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
   <zorder>Add_habit_comboBox</zorder>
   <zorder>pushButton</zorder>
   <zorder>layoutWidget</zorder>
@@ -506,16 +488,12 @@ background-color:#2A64BB;
   <zorder>line</zorder>
   <zorder>line_2</zorder>
   <zorder>line_3</zorder>
-  <zorder>label_2</zorder>
-  <zorder>Add_habit_button</zorder>
-  <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
-  <zorder>label_6</zorder>
+  <zorder>groupBox</zorder>
  </widget>
  <resources>
   <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>
-
