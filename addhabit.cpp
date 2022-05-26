@@ -100,14 +100,6 @@ void AddHabit::addHabit()
                "FROM User_Habits;");
                 rec = query.record();
 
-    str_t               =   "INSERT INTO User_Habits(id_user_habit, id_user, id_habit, days, time)"
-                            "VALUES(%1, %2, %3, '%4', '%5');";
-    query.exec(str_t
-               .arg(habit_counter)
-               .arg(thisUserId)
-               .arg(ui->Add_habit_comboBox->currentIndex() - 1)
-               .arg(det_days())
-               .arg(ui->timeEdit->time().toString()));
 
     str_t               =   "INSERT INTO User_Habits(id_user_habit, id_user, id_habit, progression, days, time, check_time)"
                             "VALUES(%1, %2, %3, %4, '%5', '%6', %7);";
@@ -147,24 +139,16 @@ void AddHabit::on_pushButton_clicked()
 
 
 
-
-
-void AddHabit::on_Add_habit_button_clicked()
-{
-    connectDB();
-    addHabit();
-    emit backed();
-}
-
-
 void AddHabit::on_pushButton_4_clicked()
 {
     emit backed();
 }
 
 
-void AddHabit::on_pushButton_2_clicked()
+void AddHabit::on_add_button_clicked()
 {
+    connectDB();
+    addHabit();
     emit backed();
 }
 

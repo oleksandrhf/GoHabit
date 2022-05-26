@@ -235,7 +235,7 @@ background: #4E944F;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/img/pick/Save.png</pixmap>
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>  
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -360,7 +360,7 @@ background: #4E944F;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="recources.qrc">:/img/pick/Save.png</pixmap>
+     <pixmap>:/img/pick/Save.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -376,7 +376,7 @@ background: #4E944F;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="recources.qrc">:/img/pick/Back.png</pixmap>
+     <pixmap>:/img/pick/Back.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -409,7 +409,6 @@ background: #4E944F;</string>
     <rect>
      <x>10</x>
      <y>200</y>
-
      <width>340</width>
      <height>20</height>
     </rect>
@@ -449,7 +448,7 @@ background: #4E944F;</string>
    <property name="styleSheet">
     <string notr="true">color: #000000;</string>
    </property>
-   <property name="text">
+   <property name="text" stdset="0">
     <string>Description:</string>
    </property>
   </widget>
@@ -482,4 +481,3 @@ background: #4E944F;</string>
  </resources>
  <connections/>
 </ui>
-

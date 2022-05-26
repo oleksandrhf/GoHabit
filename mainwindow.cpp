@@ -14,7 +14,6 @@ MainWindow::MainWindow(QWidget *parent) :
     user_counter = 5;
     m_loginSuccesfull = false;
 
-
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 
@@ -495,5 +494,58 @@ void MainWindow::FillarrOfId()
             correctHabitsCounter++;
         }
     }
+}
+
+
+void MainWindow::on_habit_deleted(int i)
+{
+    QSqlQuery query;
+    QString str_t;
+    str_t = "DELETE "
+            "FROM User_Habits "
+            "WHERE id_user_habit = ";
+    str_t.append(QString::number(arrayOfId[i]));
+    str_t.append(";");
+    query.exec(str_t);
+    FillarrOfId();
+    visibleCheck();
+    HideMenu();
+}
+
+
+
+void MainWindow::on_pushButton_11_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    on_habit_deleted(0);
+}
+
+
+void MainWindow::on_pushButton_13_clicked()
+{
+    on_habit_deleted(1);
+}
+
+
+void MainWindow::on_pushButton_15_clicked()
+{
+    on_habit_deleted(2);
+}
+
+
+void MainWindow::on_pushButton_17_clicked()
+{
+    on_habit_deleted(3);
+}
+
+
+void MainWindow::on_pushButton_19_clicked()
+{
+    on_habit_deleted(4);
 }
 
