@@ -153,7 +153,7 @@ background: #4E944F;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>70</y>
+      <y>60</y>      
       <width>321</width>
       <height>441</height>
      </rect>
@@ -177,7 +177,7 @@ background: #4E944F;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>280</y>
+        <y>270</y>
         <width>297</width>
         <height>81</height>
        </rect>
@@ -190,7 +190,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>63</width>
+         <width>241</width>
          <height>20</height>
         </rect>
        </property>
@@ -226,6 +226,13 @@ background: #4E944F;</string>
        <property name="text">
         <string/>
        </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
       </widget>
       <widget class="QProgressBar" name="progressBar_4">
        <property name="geometry">
@@ -253,7 +260,7 @@ background: #4E944F;</string>
        <rect>
         <x>10</x>
         <y>360</y>
-        <width>297</width>
+        <width>301</width>
         <height>71</height>
        </rect>
       </property>
@@ -265,7 +272,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>63</width>
+         <width>261</width>
          <height>20</height>
         </rect>
        </property>
@@ -301,6 +308,13 @@ background: #4E944F;</string>
        <property name="text">
         <string/>
        </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
       </widget>
       <widget class="QProgressBar" name="progressBar_5">
        <property name="geometry">
@@ -323,11 +337,11 @@ background: #4E944F;</string>
       <zorder>label_6</zorder>
       <zorder>pushButton_7</zorder>
      </widget>
-     <widget class="QGroupBox" name="groupBox_7">
+     <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>20</y>
         <width>297</width>
         <height>81</height>
        </rect>
@@ -343,7 +357,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>63</width>
+         <width>231</width>
          <height>20</height>
         </rect>
        </property>
@@ -376,8 +390,18 @@ background: #4E944F;</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QProgressBar" name="progressBar">
@@ -414,7 +438,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>63</width>
+         <width>211</width>
          <height>20</height>
         </rect>
        </property>
@@ -449,6 +473,13 @@ background: #4E944F;</string>
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QProgressBar" name="progressBar_3">
@@ -492,7 +523,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>63</width>
+         <width>211</width>
          <height>20</height>
         </rect>
        </property>
@@ -519,14 +550,21 @@ background: #4E944F;</string>
       <widget class="QPushButton" name="pushButton_4">
        <property name="geometry">
         <rect>
-         <x>270</x>
-         <y>10</y>
+         <x>260</x>
+         <y>20</y>
          <width>16</width>
          <height>41</height>
         </rect>
        </property>
        <property name="text">
         <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QProgressBar" name="progressBar_2">
@@ -552,7 +590,7 @@ background: #4E944F;</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>570</y>
+      <y>510</y>
       <width>361</width>
       <height>81</height>
      </rect>
@@ -653,6 +691,286 @@ text-align: bottom;</string>
     <zorder>label_10</zorder>
     <zorder>menuButton</zorder>
     <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>150</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border-radius: 15px;
+border:2px solid #0d0d0d;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>230</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border-radius: 15px;
+border:2px solid #0d0d0d;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>320</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border-radius: 15px;
+border:2px solid #0d0d0d;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>400</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border-radius: 15px;
+border:2px solid #0d0d0d;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>480</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+border-radius: 15px;
+border:2px solid #0d0d0d;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_18">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_19">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

@@ -162,3 +162,9 @@ void AddHabit::on_pushButton_4_clicked()
     emit backed();
 }
 
+
+void AddHabit::on_pushButton_2_clicked()
+{
+    emit backed();
+}
+

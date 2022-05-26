@@ -820,7 +820,7 @@ border-radius: 20;</string>
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>80</y>
+          <y>50</y>
           <width>41</width>
           <height>21</height>
          </rect>
