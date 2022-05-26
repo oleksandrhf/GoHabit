@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: #E5E5E5;</string>
+   <string notr="true">background-color: #B4E197;</string>
   </property>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: #E5E5E5;</string>
+    <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
     <number>0</number>
@@ -457,7 +457,7 @@ background: #4E944F;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: #E5E5E5;
+      <string notr="true">background-color: #E9EFC0;
 </string>
      </property>
      <property name="widgetResizable">
@@ -853,7 +853,7 @@ color: #000000;
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">background: #E5E5E5;</string>
+        <string notr="true">background: #E9EFC0;</string>
        </property>
        <property name="title">
         <string/>
@@ -1058,6 +1058,9 @@ background: #4E944F;</string>
        <bool>true</bool>
       </property>
      </widget>
+     <zorder>label_4</zorder>
+     <zorder>label_21</zorder>
+     <zorder>backSettings</zorder>
     </widget>
    </widget>
   </widget>

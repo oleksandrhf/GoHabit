@@ -67,8 +67,6 @@ private slots:
     void on_checkBox_5_stateChanged(int arg1);
     void on_menuButton_clicked();
     void menuTodayButton();
-
-
 };
 
 #endif // MAINWINDOW_H
