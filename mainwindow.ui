@@ -22,7 +22,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background:#E9EFC0;</string>
   </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
@@ -482,8 +482,7 @@ background: #4E944F;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-background-color: rgb(170, 170, 255);</string>
+       <string notr="true"/>
       </property>
       <property name="title">
        <string/>
