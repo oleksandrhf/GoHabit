@@ -29,7 +29,7 @@
     <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="Menu_page">
     <widget class="QPushButton" name="pushButton">
@@ -529,7 +529,7 @@ color: #000000;</string>
          <x>20</x>
          <y>190</y>
          <width>81</width>
-         <height>81</height>
+         <height>111</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -568,8 +568,8 @@ border-radius: 20;</string>
        <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>50</y>
+          <x>10</x>
+          <y>80</y>
           <width>51</width>
           <height>21</height>
          </rect>
@@ -595,7 +595,7 @@ color: #000000;
          <x>140</x>
          <y>190</y>
          <width>81</width>
-         <height>81</height>
+         <height>111</height>
         </rect>
        </property>
        <property name="title">
@@ -631,8 +631,8 @@ border-radius: 20;</string>
        <widget class="QLabel" name="label_10">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>50</y>
+          <x>10</x>
+          <y>80</y>
           <width>51</width>
           <height>21</height>
          </rect>
@@ -658,7 +658,7 @@ color: #000000;
          <x>260</x>
          <y>190</y>
          <width>81</width>
-         <height>81</height>
+         <height>111</height>
         </rect>
        </property>
        <property name="title">
@@ -694,8 +694,8 @@ border-radius: 20;</string>
        <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>50</y>
+          <x>10</x>
+          <y>80</y>
           <width>51</width>
           <height>21</height>
          </rect>
@@ -721,7 +721,7 @@ color: #000000;
          <x>70</x>
          <y>340</y>
          <width>81</width>
-         <height>81</height>
+         <height>111</height>
         </rect>
        </property>
        <property name="title">
@@ -756,8 +756,8 @@ border-radius: 20;</string>
        <widget class="QLabel" name="label_16">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>50</y>
+          <x>10</x>
+          <y>80</y>
           <width>51</width>
           <height>21</height>
          </rect>
@@ -780,10 +780,10 @@ color: #000000;
       <widget class="QGroupBox" name="groupBox_10">
        <property name="geometry">
         <rect>
-         <x>210</x>
+         <x>200</x>
          <y>340</y>
-         <width>81</width>
-         <height>81</height>
+         <width>91</width>
+         <height>111</height>
         </rect>
        </property>
        <property name="title">
@@ -820,7 +820,7 @@ border-radius: 20;</string>
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>50</y>
+          <y>80</y>
           <width>41</width>
           <height>21</height>
          </rect>
