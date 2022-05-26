@@ -14,6 +14,13 @@ MainWindow::MainWindow(QWidget *parent) :
     user_counter = 5;
     m_loginSuccesfull = false;
 
+
+    connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
+            this, SLOT(on_checkboxblocked(id_user_Habit)));
+
+    connect(&ah, SIGNAL(backed()),
+            this, SLOT(on_go_back()));
+      
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
 
@@ -227,7 +234,6 @@ void MainWindow::SetVisible()
     arrayOfId[2] != 0 ? ui_Main->groupBox_3->setVisible(true) : ui_Main->groupBox_3->setVisible(false);
     arrayOfId[3] != 0 ? ui_Main->groupBox_4->setVisible(true) : ui_Main->groupBox_4->setVisible(false);
     arrayOfId[4] != 0 ? ui_Main->groupBox_5->setVisible(true) : ui_Main->groupBox_5->setVisible(false);
-
 }
 
 
@@ -389,7 +395,6 @@ void MainWindow::menuTodayButton()
      ui_menu.hide();
     this->show();
 }
-
 
 void MainWindow::on_pushButton_3_clicked()
 {

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>360</width>
-    <height>590</height>
+    <height>648</height>
    </rect>
   </property>
   <property name="font">
@@ -153,7 +153,7 @@ background: #4E944F;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
+      <y>60</y>      
       <width>321</width>
       <height>441</height>
      </rect>
@@ -319,8 +319,8 @@ background: #4E944F;</string>
       <widget class="QProgressBar" name="progressBar_5">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>30</y>
+         <x>40</x>
+         <y>40</y>
          <width>211</width>
          <height>23</height>
         </rect>
@@ -384,10 +384,10 @@ background: #4E944F;</string>
       <widget class="QPushButton" name="pushButton_3">
        <property name="geometry">
         <rect>
-         <x>260</x>
-         <y>30</y>
-         <width>20</width>
-         <height>31</height>
+         <x>270</x>
+         <y>10</y>
+         <width>16</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">

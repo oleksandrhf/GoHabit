@@ -6,47 +6,70 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>297</width>
-    <height>581</height>
+    <width>360</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: #E9EFC0;</string>
+  </property>
   <widget class="QPushButton" name="Add_habit_button">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>10</y>
+     <x>290</x>
+     <y>0</y>
      <width>71</width>
-     <height>29</height>
+     <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+   </property>
    <property name="text">
-    <string>Save</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>181</width>
-     <height>20</height>
+     <x>0</x>
+     <y>0</y>
+     <width>81</width>
+     <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+   </property>
    <property name="text">
-    <string>Habit Name</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QComboBox" name="Add_habit_comboBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>120</y>
-     <width>221</width>
+     <x>10</x>
+     <y>100</y>
+     <width>341</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #c4c4c4;</string>
    </property>
    <property name="currentIndex">
     <number>-1</number>
@@ -58,11 +81,48 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>460</y>
-     <width>161</width>
+     <x>10</x>
+     <y>330</y>
+     <width>341</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
    </property>
    <property name="text">
     <string>Create habit</string>
@@ -71,22 +131,52 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>280</y>
-     <width>251</width>
-     <height>20</height>
+     <x>9</x>
+     <y>170</y>
+     <width>341</width>
+     <height>42</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QCheckBox" name="checkBox_2">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -94,6 +184,21 @@
     </item>
     <item>
      <widget class="QCheckBox" name="checkBox_3">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -101,6 +206,21 @@
     </item>
     <item>
      <widget class="QCheckBox" name="checkBox_4">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -108,6 +228,21 @@
     </item>
     <item>
      <widget class="QCheckBox" name="checkBox_5">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -115,6 +250,21 @@
     </item>
     <item>
      <widget class="QCheckBox" name="checkBox_6">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -122,6 +272,21 @@
     </item>
     <item>
      <widget class="QCheckBox" name="checkBox_7">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -132,40 +297,179 @@
   <widget class="QTimeEdit" name="timeEdit">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>380</y>
-     <width>118</width>
+     <x>10</x>
+     <y>270</y>
+     <width>341</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #c4c4c4;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remind me at</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>350</y>
-     <width>63</width>
-     <height>20</height>
+     <x>0</x>
+     <y>0</y>
+     <width>361</width>
+     <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">Background-color: #4E944F</string>
+   </property>
    <property name="text">
-    <string>Time</string>
+    <string>New Habit</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
+     <x>10</x>
+     <y>0</y>
      <width>61</width>
-     <height>29</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Back</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Repeat on these days</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chose a habit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>61</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>pushButton_4</zorder>
+  <zorder>Add_habit_comboBox</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>timeEdit</zorder>
+  <zorder>label</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>label_2</zorder>
+  <zorder>Add_habit_button</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
+
