@@ -17,8 +17,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 
-    connect(&M, SIGNAL(Today_clicked()),
-            this, SLOT(todayClicked()));
 
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
@@ -221,13 +219,13 @@ void MainWindow::showAllHabits()
     query.exec(str_t);
      query.next();
     P = query.value(0).toInt();
-    P;
+
 }
 
 
 void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
 {
-    ui_Main->groupBox->setVisible(v1);
+    ui_Main->groupBox_7->setVisible(v1);
     ui_Main->groupBox_2->setVisible(v2);
     ui_Main->groupBox_3->setVisible(v3);
     ui_Main->groupBox_4->setVisible(v4);
@@ -394,5 +392,4 @@ void MainWindow::menuTodayButton()
      ui_menu.hide();
     this->show();
 }
-
 
