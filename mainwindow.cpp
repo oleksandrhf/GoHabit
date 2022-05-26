@@ -14,9 +14,6 @@ MainWindow::MainWindow(QWidget *parent) :
     user_counter = 5;
     m_loginSuccesfull = false;
 
-    connect(this , SIGNAL(delete_pressed(i)),
-            this, SLOT(on_habit_deleted(i)));
-
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 

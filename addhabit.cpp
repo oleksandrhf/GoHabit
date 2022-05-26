@@ -100,6 +100,7 @@ void AddHabit::addHabit()
                "FROM User_Habits;");
                 rec = query.record();
 
+
     str_t               =   "INSERT INTO User_Habits(id_user_habit, id_user, id_habit, progression, days, time, check_time)"
                             "VALUES(%1, %2, %3, %4, '%5', '%6', %7);";
     query.exec(str_t

@@ -156,7 +156,7 @@ background: #4E944F;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
+      <y>60</y>      
       <width>321</width>
       <height>441</height>
      </rect>

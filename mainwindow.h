@@ -91,9 +91,6 @@ private slots:
     void on_pushButton_17_clicked();
 
     void on_pushButton_19_clicked();
-
-signals:
-    void delete_pressed(int i);
 };
 
 #endif // MAINWINDOW_H
