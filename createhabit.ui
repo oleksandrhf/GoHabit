@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background:#E9EFC0;</string>
   </property>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
@@ -28,7 +28,7 @@
    <property name="styleSheet">
     <string notr="true">QLineEdit {
 border-radius: 10px;
-background-color: #c4c4c4 ;
+background-color: #83BD75 ;
 border:2px solid #0d0d0d;
 }
 
@@ -112,13 +112,16 @@ border-radius: 4px;
 }</string>
    </property>
    <property name="minimum">
-    <number>3</number>
+    <number>1</number>
    </property>
    <property name="maximum">
-    <number>72</number>
+    <number>365</number>
    </property>
    <property name="singleStep">
     <number>4</number>
+   </property>
+   <property name="value">
+    <number>21</number>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -127,14 +130,22 @@ border-radius: 4px;
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>500</y>
-     <width>131</width>
-     <height>20</height>
+     <x>100</x>
+     <y>570</y>
+     <width>231</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
    <property name="text">
-    <string notr="true">Number of days: 1</string>
+    <string notr="true">Number of days: 21</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
@@ -154,7 +165,7 @@ border-radius: 4px;
    <property name="styleSheet">
     <string notr="true">QTextEdit {
 border-radius: 6px;
-background-color: #c4c4c4 ;
+background-color: #83BD75 ;
 border:0.5px solid #0d0d0d;
 }</string>
    </property>
@@ -185,10 +196,7 @@ height: 65px;
 left: 0px;
 top: 0px;
 
-background: #969696;
-
-
-
+background: #4E944F;
 </string>
    </property>
    <property name="title">
@@ -197,10 +205,10 @@ background: #969696;
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
+      <x>310</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -220,30 +228,17 @@ background: #969696;
       <x>320</x>
       <y>10</y>
       <width>31</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="recources.qrc">:/img/pick/Save.png</pixmap>
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="recources.qrc">:/img/pick/Back.png</pixmap>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -266,8 +261,57 @@ background: #969696;
      <string/>
     </property>
    </widget>
-   <zorder>label_5</zorder>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">position: absolute;
+width: 115px;
+height: 37px;
+left: 126px;
+top: 5px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #000000;
+background: #4E944F;</string>
+    </property>
+    <property name="text">
+     <string>Create habit</string>
+    </property>
+   </widget>
+   <zorder>label_21</zorder>
    <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
   </widget>
@@ -303,6 +347,54 @@ background: #969696;
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>37</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>220</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Description:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>510</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>12354</string>
+   </property>
+   <property name="text">
+    <string>(We recommend 21 days)</string>
+   </property>
+  </widget>
  </widget>
  <tabstops>
   <tabstop>horizontalSlider</tabstop>
@@ -312,8 +404,7 @@ background: #969696;
   <tabstop>pushButton_2</tabstop>
  </tabstops>
  <resources>
-  <include location="recources.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>
-

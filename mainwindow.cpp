@@ -11,16 +11,15 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui_Main(new Ui::MainWindow)
 {
-    user_counter = 0;
+    user_counter = 5;
     m_loginSuccesfull = false;
 
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 
-
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
-
+      
     connect(&ah, SIGNAL(backed()),
             this, SLOT(on_go_back()));
 
@@ -51,7 +50,9 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
    ui_Main->setupUi(this);
+   FillarrOfId();
    visibleCheck();
+   HideMenu();
 
 }
 
@@ -70,7 +71,6 @@ void MainWindow::SetCheckTime(int id, QDateTime T)
 
 void MainWindow::authorizeUser()
 {
-    Singleton* s1 = Singleton::getInstance();
     m_username          = ui_Auth.getLogin();
     m_userpass          = ui_Auth.getPass();   //зчитування з форми
 
@@ -97,8 +97,7 @@ void MainWindow::authorizeUser()
     username    = query.value(rec.indexOf("name")).toString();
     userpass    = query.value(rec.indexOf("password")).toString();
     login       = query.value(rec.indexOf("email")).toString();  //зчитування з бази
-
-
+    s1->SetThisUserId(user_counter);
 
     if(m_username != username || m_userpass != userpass)         //порівняння на правильність
     {
@@ -112,6 +111,9 @@ void MainWindow::authorizeUser()
         m_loginSuccesfull = true;
         ui_Auth.close();
         ui_Reg.close();
+        FillarrOfId();
+        visibleCheck();
+        HideMenu();
         this->show();
     }
 }
@@ -195,7 +197,8 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_go_back()
 {
     this->show();
-    ah.hide();
+    ah.close();
+    FillarrOfId();
     visibleCheck();
 }
 
@@ -223,22 +226,25 @@ void MainWindow::showAllHabits()
 }
 
 
-void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
+void MainWindow::SetVisible()
 {
-    ui_Main->groupBox_7->setVisible(v1);
-    ui_Main->groupBox_2->setVisible(v2);
-    ui_Main->groupBox_3->setVisible(v3);
-    ui_Main->groupBox_4->setVisible(v4);
-    ui_Main->groupBox_5->setVisible(v5);
+    arrayOfId[0] != 0 ? ui_Main->groupBox->setVisible(true) : ui_Main->groupBox->setVisible(false);
+    arrayOfId[1] != 0 ? ui_Main->groupBox_2->setVisible(true) : ui_Main->groupBox_2->setVisible(false);
+    arrayOfId[2] != 0 ? ui_Main->groupBox_3->setVisible(true) : ui_Main->groupBox_3->setVisible(false);
+    arrayOfId[3] != 0 ? ui_Main->groupBox_4->setVisible(true) : ui_Main->groupBox_4->setVisible(false);
+    arrayOfId[4] != 0 ? ui_Main->groupBox_5->setVisible(true) : ui_Main->groupBox_5->setVisible(false);
 }
 
 
  void MainWindow::AddToProgress(QProgressBar * pb, QLabel* W, QCheckBox * CB,  int index)
  {
+     if(index != 0)
+     {
      QSqlQuery query;
      QSqlRecord rec;
      QString str_t;
-     int P, P2;
+     int P, P2, id_u;
+     id_u = user_counter;
      QString nameHabit;
      P = GetIdHabit(index);
      str_t = "SELECT name_habit "
@@ -253,60 +259,49 @@ void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
              "FROM User_Habits "
              "WHERE id_habit = ";
      str_t.append(QString::number(P));
+     str_t.append(" AND ");
+     str_t.append("id_user = ");
+     str_t.append(QString::number(id_u));
      str_t.append(";");
      query.exec(str_t);
      query.next();
      P2 = query.value(0).toInt();
      W->setText(nameHabit);
      setProgressbar(P, P2, pb);
+     }
  }
 
  void MainWindow::visibleCheck()
  {
-     QSqlQuery query;
-     QSqlRecord rec;
-     QString str_t;
-     int P;
-     str_t = "SELECT MAX(id_user_habit) "
-             "FROM User_Habits";
-     query.exec(str_t);
-      query.next();
-     P = query.value(0).toInt();
-     switch (P)
+     SetVisible();
+     switch (correctHabitsCounter)
      {
      case 0:
-         SetVisible(false, false, false, false, false);
          break;
      case 1:
-         SetVisible(true, false, false, false, false);
-         AddToProgress(ui_Main->progressBar,  ui_Main->label_2, ui_Main->checkBox , 1);
-
+         AddToProgress(ui_Main->progressBar,  ui_Main->label_2, ui_Main->checkBox , arrayOfId[0]);
          break;
      case 2:
-         SetVisible(true, true, false, false, false);
-         AddToProgress(ui_Main->progressBar,ui_Main->label_2, ui_Main->checkBox, 1);
-         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, 2);
+         AddToProgress(ui_Main->progressBar,ui_Main->label_2, ui_Main->checkBox, arrayOfId[0]);
+         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, arrayOfId[1]);
          break;
      case 3:
-         SetVisible(true, true, true, false, false);
-         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, 1);
-         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, 2);
-         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, 3);
+         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, arrayOfId[0]);
+         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, arrayOfId[1]);
+         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, arrayOfId[2]);
          break;
      case 4:
-         SetVisible(true, true, true, true, false);
-         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, 1);
-         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, 2);
-         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, 3);
-         AddToProgress(ui_Main->progressBar_4, ui_Main->label_5, ui_Main->checkBox_4, 4);
+         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, arrayOfId[0]);
+         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, arrayOfId[1]);
+         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, arrayOfId[2]);
+         AddToProgress(ui_Main->progressBar_4, ui_Main->label_5, ui_Main->checkBox_4, arrayOfId[3]);
          break;
      case 5:
-         SetVisible(true, true, true, true, true);
-         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, 1);
-         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, 2);
-         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, 3);
-         AddToProgress(ui_Main->progressBar_4, ui_Main->label_5, ui_Main->checkBox_4, 4);
-         AddToProgress(ui_Main->progressBar_5, ui_Main->label_6, ui_Main->checkBox_5, 5);
+         AddToProgress(ui_Main->progressBar, ui_Main->label_2, ui_Main->checkBox, arrayOfId[0]);
+         AddToProgress(ui_Main->progressBar_2, ui_Main->label_3, ui_Main->checkBox_2, arrayOfId[1]);
+         AddToProgress(ui_Main->progressBar_3, ui_Main->label_4, ui_Main->checkBox_3, arrayOfId[2]);
+         AddToProgress(ui_Main->progressBar_4, ui_Main->label_5, ui_Main->checkBox_4, arrayOfId[3]);
+         AddToProgress(ui_Main->progressBar_5, ui_Main->label_6, ui_Main->checkBox_5, arrayOfId[4]);
          break;
      default:
          break;
@@ -318,7 +313,8 @@ void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
  {
      QSqlQuery query1, query2;
      QString str_t;
-     int P1, P2;
+     int P1, P2, id_u;
+     id_u = user_counter;
      QString nameHabit;
      str_t = "SELECT how_long "
              "FROM Habits "
@@ -333,6 +329,9 @@ void MainWindow::SetVisible(bool v1, bool v2, bool v3, bool v4, bool v5)
              "FROM User_Habits "
              "WHERE id_user_habit = ";
      str_t.append(QString::number(user_habit));
+     str_t.append(" AND ");
+     str_t.append("id_user = ");
+     str_t.append(QString::number(id_u));
      str_t.append(";");
      query2.exec(str_t);
      query2.next();
@@ -348,6 +347,9 @@ int MainWindow::GetIdHabit(int Id_user_habit)
             "FROM User_Habits "
             "WHERE id_user_habit = ";
     str_t.append(QString::number(Id_user_habit));
+    str_t.append(" AND ");
+    str_t.append("id_user = ");
+    str_t.append(QString::number(user_counter));
     str_t.append(";");
     query.exec(str_t);
     query.next();
@@ -358,27 +360,27 @@ int MainWindow::GetIdHabit(int Id_user_habit)
 
 void MainWindow::on_checkBox_stateChanged(int arg1)
 {
-    TC.DateCheck(1, ui_Main->checkBox->isChecked());
+    TC.DateCheck(arrayOfId[0], ui_Main->checkBox->isChecked());
 }
 
 void MainWindow::on_checkBox_2_stateChanged(int arg1)
 {
-    TC.DateCheck(2, ui_Main->checkBox_2->isChecked());
+    TC.DateCheck(arrayOfId[1], ui_Main->checkBox_2->isChecked());
 }
 
 void MainWindow::on_checkBox_3_stateChanged(int arg1)
 {
-    TC.DateCheck(3, ui_Main->checkBox_3->isChecked());
+    TC.DateCheck(arrayOfId[2], ui_Main->checkBox_3->isChecked());
 }
 
 void MainWindow::on_checkBox_4_stateChanged(int arg1)
 {
-    TC.DateCheck(4, ui_Main->checkBox_4->isChecked());
+    TC.DateCheck(arrayOfId[3], ui_Main->checkBox_4->isChecked());
 }
 
 void MainWindow::on_checkBox_5_stateChanged(int arg1)
 {
-    TC.DateCheck(5, ui_Main->checkBox_5->isChecked());
+    TC.DateCheck(arrayOfId[4], ui_Main->checkBox_5->isChecked());
 }
 
 
@@ -391,5 +393,159 @@ void MainWindow::menuTodayButton()
 {
      ui_menu.hide();
     this->show();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    if(ui_Main->widget->isVisible() == false)
+    {
+    ui_Main->widget->setVisible(true);
+    }
+    else
+    {
+        ui_Main->widget->setVisible(false);
+    }
+}
+
+void MainWindow::HideMenu()
+{
+    ui_Main->widget->setVisible(false);
+    ui_Main->widget_2->setVisible(false);
+    ui_Main->widget_3->setVisible(false);
+    ui_Main->widget_4->setVisible(false);
+    ui_Main->widget_5->setVisible(false);
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    if(ui_Main->widget_2->isVisible() == false)
+    {
+    ui_Main->widget_2->setVisible(true);
+    }
+    else
+    {
+        ui_Main->widget_2->setVisible(false);
+    }
+}
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    if(ui_Main->widget_3->isVisible() == false)
+    {
+    ui_Main->widget_3->setVisible(true);
+    }
+    else
+    {
+        ui_Main->widget_3->setVisible(false);
+    }
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    if(ui_Main->widget_4->isVisible() == false)
+    {
+    ui_Main->widget_4->setVisible(true);
+    }
+    else
+    {
+        ui_Main->widget_4->setVisible(false);
+    }
+}
+
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    if(ui_Main->widget_5->isVisible() == false)
+    {
+    ui_Main->widget_5->setVisible(true);
+    }
+    else
+    {
+        ui_Main->widget_5->setVisible(false);
+    }
+}
+
+void MainWindow::FillarrOfId()
+{
+    QSqlQuery query;
+    QString str_t;
+    int t;
+    for(int i = 0; i < 5 ;i++)
+    {
+        arrayOfId[i] = 0;
+    }
+    str_t = "SELECT id_user_habit "
+            "FROM User_Habits "
+            "WHERE id_user = ";
+    str_t.append(QString::number(user_counter));
+    str_t.append(";");
+    query.exec(str_t);
+    correctHabitsCounter = 0;
+    for (int i = 0; i < 5 ;i++ )
+    {
+        query.next();
+        t = query.value(0).toInt();
+        arrayOfId[i] = t;
+        if(t != 0)
+        {
+            correctHabitsCounter++;
+        }
+    }
+}
+
+
+void MainWindow::on_habit_deleted(int i)
+{
+    QSqlQuery query;
+    QString str_t;
+    str_t = "DELETE "
+            "FROM User_Habits "
+            "WHERE id_user_habit = ";
+    str_t.append(QString::number(arrayOfId[i]));
+    str_t.append(";");
+    query.exec(str_t);
+    FillarrOfId();
+    visibleCheck();
+    HideMenu();
+}
+
+
+
+void MainWindow::on_pushButton_11_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    on_habit_deleted(0);
+}
+
+
+void MainWindow::on_pushButton_13_clicked()
+{
+    on_habit_deleted(1);
+}
+
+
+void MainWindow::on_pushButton_15_clicked()
+{
+    on_habit_deleted(2);
+}
+
+
+void MainWindow::on_pushButton_17_clicked()
+{
+    on_habit_deleted(3);
+}
+
+
+void MainWindow::on_pushButton_19_clicked()
+{
+    on_habit_deleted(4);
 }
 
