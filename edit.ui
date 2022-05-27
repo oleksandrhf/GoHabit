@@ -551,6 +551,7 @@ background-color:#2A64BB;
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:#c4c4c4;</string>
+
    </property>
    <property name="text">
     <string>Tue</string>
