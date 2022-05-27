@@ -5,5 +5,7 @@
         <file>pick/Save.png</file>
         <file>pick/Today.png</file>
         <file>pick/points.png</file>
+        <file>pick/done.png</file>
+        <file>pick/filled-circle.png</file>
     </qresource>
 </RCC>

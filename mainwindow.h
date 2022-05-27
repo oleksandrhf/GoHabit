@@ -41,7 +41,6 @@ public:
 private:
     Ui::MainWindow *ui_Main;
     auth_window ui_Auth;
-    menu M;
     int arrayOfId[5];
     reg_window ui_Reg;
     menu ui_menu;
