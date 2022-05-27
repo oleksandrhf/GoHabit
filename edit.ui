@@ -55,7 +55,14 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">position: absolute;
+width: 360px;
+height: 65px;
+left: 0px;
+top: 0px;
+
+background: #4E944F;
+</string>
    </property>
    <property name="title">
     <string/>
@@ -544,6 +551,7 @@ background-color:#2A64BB;
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:#c4c4c4;</string>
+
    </property>
    <property name="text">
     <string>Tue</string>
