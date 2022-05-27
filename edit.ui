@@ -13,499 +13,29 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>110</y>
-     <width>41</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Mon</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Add_habit_button">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>20</y>
-     <width>71</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="text">
-    <string>Save</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>170</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remind me at</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_2">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>110</y>
-     <width>41</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_7">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>110</y>
-     <width>41</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_5">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>110</y>
-     <width>41</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}</string>
-   </property>
-   <property name="text">
-    <string>fsdf</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>120</y>
-     <width>24</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Wed</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>120</y>
-     <width>20</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Sun</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>61</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Back</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>110</y>
-     <width>54</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>120</y>
-     <width>21</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Thu</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>360</width>
-     <height>65</height>
-    </rect>
-   </property>
-   <property name="palette">
-    <palette>
-     <active>
-      <colorrole role="Button">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Window">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </active>
-     <inactive>
-      <colorrole role="Button">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Window">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </inactive>
-     <disabled>
-      <colorrole role="Button">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Base">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-      <colorrole role="Window">
-       <brush brushstyle="SolidPattern">
-        <color alpha="255">
-         <red>196</red>
-         <green>196</green>
-         <blue>196</blue>
-        </color>
-       </brush>
-      </colorrole>
-     </disabled>
-    </palette>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-background-color: rgb(196, 196, 196);
-text-align:center;</string>
-   </property>
-   <property name="text">
-    <string>Edit</string>
-   </property>
-   <property name="textFormat">
-    <enum>Qt::AutoText</enum>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="Line" name="line_3">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>430</y>
-     <width>341</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_3">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>110</y>
-     <width>41</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}
-
-</string>
-   </property>
-   <property name="text">
-    <string>44</string>
-   </property>
-   <property name="checked">
-    <bool>false</bool>
-   </property>
-   <property name="autoRepeat">
-    <bool>false</bool>
-   </property>
-   <property name="tristate">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_6">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>110</y>
-     <width>41</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>271</x>
-     <y>121</y>
-     <width>16</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Sat</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">background:#E9EFC0;</string>
+  </property>
   <widget class="QTimeEdit" name="timeEdit">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>190</y>
-     <width>321</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-  </widget>
-  <widget class="Line" name="line_5">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>210</y>
      <width>341</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_4">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>110</y>
-     <width>41</width>
-     <height>40</height>
+     <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QCheckBox::indicator{
- background-color: #c4c4c4;
-border-radius: 10px;
-height:40 px;
-width:40 px;
-
-}
-
-QCheckBox:indicator::checked
-{
- background-color:#2A64BB;
-
-}</string>
-   </property>
-   <property name="text">
-    <string/>
+    <string notr="true">background: #c4c4c4;</string>
    </property>
   </widget>
-  <widget class="Line" name="line_4">
+  <widget class="Line" name="line_3">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>150</y>
+     <y>240</y>
      <width>341</width>
-     <height>31</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="frameShadow">
@@ -515,45 +45,199 @@ QCheckBox:indicator::checked
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>270</y>
-     <width>271</width>
-     <height>161</height>
+     <x>0</x>
+     <y>0</y>
+     <width>361</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">position: absolute;
+width: 360px;
+height: 65px;
+left: 0px;
+top: 0px;
+
+background: #4E944F;
+</string>
    </property>
-   <property name="html">
-    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   <property name="title">
+    <string/>
    </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/img/pick/Save.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">position: absolute;
+width: 115px;
+height: 37px;
+left: 126px;
+top: 5px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 30px;
+
+color: #000000;
+background: #4E944F;</string>
+    </property>
+    <property name="text">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Add_habit_button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: medium none;
+  background-image: none; 
+  background: transparent;
+  float: left;
+  background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/img/pick/pick/Back.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_6</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>Add_habit_button</zorder>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>250</y>
-     <width>61</width>
-     <height>16</height>
+     <x>10</x>
+     <y>160</y>
+     <width>341</width>
+     <height>20</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Description</string>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>90</y>
-     <width>151</width>
+     <width>121</width>
      <height>16</height>
     </rect>
    </property>
@@ -561,62 +245,415 @@ p, li { white-space: pre-wrap; }
     <string>Repeat on these days</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>120</y>
-     <width>19</width>
+     <x>10</x>
+     <y>190</y>
+     <width>91</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Tue</string>
+    <string>Remind me at</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_6">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+   </property>
+   <property name="text">
+    <string>Wed</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+   </property>
+   <property name="text">
+    <string>Sun</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+   </property>
+   <property name="text">
+    <string>Thu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+   </property>
+   <property name="text">
+    <string>Sut</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>120</y>
-     <width>13</width>
+     <y>130</y>
+     <width>25</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
    </property>
    <property name="text">
     <string>Fri</string>
    </property>
   </widget>
+  <widget class="QCheckBox" name="checkBox_7">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>41</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox::indicator{
+background-color: #c4c4c4;
+border-radius: 10px;
+height:40 px;
+width:40 px;
+
+}
+
+QCheckBox:indicator::checked
+{
+background-color:#2A64BB;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+
+   </property>
+   <property name="text">
+    <string>Tue</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#c4c4c4;</string>
+   </property>
+   <property name="text">
+    <string>Mon</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>270</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+border-radius: 6px;
+background-color: #83BD75 ;
+border:0.5px solid #0d0d0d;
+}</string>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Write a description of your habit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>520</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string notr="true">Number of days: 21</string>
+   </property>
+  </widget>
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>480</y>
-     <width>261</width>
-     <height>21</height>
+     <x>45</x>
+     <y>500</y>
+     <width>270</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QSlider::groove:horizontal {
 border: 1px solid #bbb;
-background: c4c4c4;
+background: red;
 height: 10px;
 border-radius: 4px;
 }
-
 QSlider::sub-page:horizontal {
 background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
-    stop: 0 c4c4c4, stop: 1 #c4c4c4);
+    stop: 0 #66e, stop: 1 #bbf);
 background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
-    stop: 0 #c4c4c4, stop: 1 #c4c4c4);
-border: 1px solid c4c4c4;
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
 height: 10px;
 border-radius: 4px;
 }
 
 QSlider::add-page:horizontal {
-background: 00aaff;
-	background-color: rgb(255, 255, 255);
+background: #fff;
 border: 1px solid #777;
 height: 10px;
 border-radius: 4px;
@@ -626,12 +663,12 @@ QSlider::handle:horizontal {
 background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
     stop:0 #eee, stop:1 #ccc);
 border: 1px solid #777;
-width: 15px;
-height:70px;
+width: 13px;
 margin-top: -2px;
 margin-bottom: -2px;
-border-radius: 5px;
+border-radius: 4px;
 }
+
 QSlider::handle:horizontal:hover {
 background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
     stop:0 #fff, stop:1 #ddd);
@@ -653,64 +690,85 @@ QSlider::handle:horizontal:disabled {
 background: #eee;
 border: 1px solid #aaa;
 border-radius: 4px;
-}
-
-</string>
+}</string>
    </property>
    <property name="minimum">
-    <number>3</number>
+    <number>1</number>
    </property>
    <property name="maximum">
-    <number>72</number>
+    <number>365</number>
    </property>
    <property name="singleStep">
     <number>4</number>
+   </property>
+   <property name="value">
+    <number>21</number>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_12">
+  <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>450</y>
-     <width>131</width>
+     <x>100</x>
+     <y>480</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>12354</string>
+   </property>
+   <property name="text">
+    <string>(We recommend 21 days)</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>341</width>
      <height>20</height>
     </rect>
    </property>
-   <property name="text">
-    <string notr="true">number of days - 1</string>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <zorder>checkBox</zorder>
-  <zorder>checkBox_4</zorder>
-  <zorder>checkBox_2</zorder>
-  <zorder>checkBox_3</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_2</zorder>
   <zorder>checkBox_7</zorder>
-  <zorder>label_4</zorder>
-  <zorder>label_9</zorder>
-  <zorder>label_6</zorder>
-  <zorder>label_10</zorder>
-  <zorder>line_3</zorder>
-  <zorder>checkBox_6</zorder>
-  <zorder>label_8</zorder>
   <zorder>timeEdit</zorder>
-  <zorder>line_5</zorder>
-  <zorder>line_4</zorder>
-  <zorder>Add_habit_button</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>textEdit</zorder>
+  <zorder>line_3</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>label_4</zorder>
   <zorder>label</zorder>
-  <zorder>label_7</zorder>
-  <zorder>label_5</zorder>
+  <zorder>checkBox_6</zorder>
+  <zorder>checkBox</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_13</zorder>
+  <zorder>checkBox_3</zorder>
+  <zorder>checkBox_4</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_12</zorder>
   <zorder>checkBox_5</zorder>
   <zorder>label_11</zorder>
+  <zorder>checkBox_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_2</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>label_5</zorder>
   <zorder>horizontalSlider</zorder>
-  <zorder>label_12</zorder>
+  <zorder>label_14</zorder>
+  <zorder>line_4</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
