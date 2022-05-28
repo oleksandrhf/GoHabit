@@ -35,56 +35,6 @@
     <number>100</number>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>330</y>
-     <width>341</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  color: #fff;
-  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-QPushButton:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-QPushButton:hover {
-  background-color: #2c974b;
-}
-
-QPushButton:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-}
-
-.QPushButton:active {
-  background-color: #298e46;
-}</string>
-   </property>
-   <property name="text">
-    <string>Create habit</string>
-   </property>
-  </widget>
   <widget class="QTimeEdit" name="timeEdit">
    <property name="geometry">
     <rect>
@@ -226,7 +176,7 @@ background: #4E944F;
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>130</x>
       <y>10</y>
       <width>151</width>
       <height>31</height>
@@ -249,7 +199,7 @@ color: #000000;
 background: #4E944F;</string>
     </property>
     <property name="text">
-     <string>Create habit</string>
+     <string>Add habit</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Add_habit_button">
@@ -653,6 +603,96 @@ background-color:#2A64BB;
    <property name="text">
     <string>Sun</string>
    </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>311</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid #0d0d0d;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+    </property>
+    <property name="text">
+     <string>Create habit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:0px solid #0d0d0d;</string>
+    </property>
+    <property name="text">
+     <string>Or you can:</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
