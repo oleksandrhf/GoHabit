@@ -29,7 +29,7 @@
     <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="Menu_page">
     <widget class="QPushButton" name="pushButton">
@@ -59,11 +59,6 @@ QPushButton {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-QPushButton:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
 }
 
 QPushButton:hover {
@@ -113,11 +108,6 @@ QPushButton {
   white-space: nowrap;
 }
 
-QPushButton:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
 QPushButton:hover {
   background-color: #2c974b;
 }
@@ -163,11 +153,6 @@ QPushButton {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-QPushButton:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
 }
 
 QPushButton:hover {
@@ -279,7 +264,7 @@ background: #4E944F;</string>
 text-align: bottom;</string>
       </property>
       <property name="text">
-       <string>Menu</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="menuToday">
@@ -300,14 +285,14 @@ text-align: bottom;</string>
 text-align: bottom;</string>
       </property>
       <property name="text">
-       <string>Today</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>0</y>
+        <x>240</x>
+        <y>12</y>
         <width>51</width>
         <height>51</height>
        </rect>
@@ -325,8 +310,8 @@ text-align: bottom;</string>
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>0</y>
+        <x>60</x>
+        <y>10</y>
         <width>51</width>
         <height>51</height>
        </rect>
@@ -472,36 +457,12 @@ background: #4E944F;</string>
         <height>638</height>
        </rect>
       </property>
-      <widget class="QLabel" name="label_5">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>10</y>
-         <width>41</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">position: absolute;
-width: 64px;
-height: 64px;
-left: 152px;
-top: 83px;
-
-background: #C4C4C4;
-
-border-radius: 20;</string>
-       </property>
-       <property name="text">
-        <string>Photo</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_6">
        <property name="geometry">
         <rect>
          <x>90</x>
          <y>70</y>
-         <width>201</width>
+         <width>211</width>
          <height>21</height>
         </rect>
        </property>
@@ -520,7 +481,7 @@ line-height: 18px;
 color: #000000;</string>
        </property>
        <property name="text">
-        <string>Ви відкрили 0 з 5 досягнень</string>
+        <string>Ви відкрили      з 5 досягнень</string>
        </property>
       </widget>
       <widget class="QGroupBox" name="groupBox_6">
@@ -562,7 +523,13 @@ background: #C4C4C4;
 border-radius: 20;</string>
         </property>
         <property name="text">
-         <string>Photo</string>
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_8">
@@ -625,7 +592,13 @@ background: #C4C4C4;
 border-radius: 20;</string>
         </property>
         <property name="text">
-         <string>Photo</string>
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_10">
@@ -688,7 +661,13 @@ background: #C4C4C4;
 border-radius: 20;</string>
         </property>
         <property name="text">
-         <string>Photo</string>
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_12">
@@ -715,137 +694,12 @@ color: #000000;
         </property>
        </widget>
       </widget>
-      <widget class="QGroupBox" name="groupBox_9">
-       <property name="geometry">
-        <rect>
-         <x>70</x>
-         <y>340</y>
-         <width>81</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <widget class="QLabel" name="label_15">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>10</y>
-          <width>41</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">position: absolute;
-width: 64px;
-height: 64px;
-left: 152px;
-top: 83px;
-
-background: #C4C4C4;
-border-radius: 20;</string>
-        </property>
-        <property name="text">
-         <string>Photo</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_16">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>51</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 18px;
-
-color: #000000;
-</string>
-        </property>
-        <property name="text">
-         <string>New Habit</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QGroupBox" name="groupBox_10">
-       <property name="geometry">
-        <rect>
-         <x>200</x>
-         <y>340</y>
-         <width>91</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <widget class="QLabel" name="label_17">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>10</y>
-          <width>41</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">position: absolute;
-width: 64px;
-height: 64px;
-left: 152px;
-top: 83px;
-
-background: #C4C4C4;
-
-border-radius: 20;</string>
-        </property>
-        <property name="text">
-         <string>Photo</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_18">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>80</y>
-          <width>41</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 18px;
-
-color: #000000;
-</string>
-        </property>
-        <property name="text">
-         <string>Half way</string>
-        </property>
-       </widget>
-      </widget>
       <widget class="QGroupBox" name="groupBox_15">
        <property name="geometry">
         <rect>
          <x>70</x>
          <y>0</y>
-         <width>231</width>
+         <width>241</width>
          <height>101</height>
         </rect>
        </property>
@@ -861,15 +715,133 @@ color: #000000;
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>71</y>
+         <width>16</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">width: 148px;
+height: 37px;
+left: 115px;
+top: 147px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QScrollArea" name="scrollArea_2">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>310</y>
+         <width>361</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>359</width>
+          <height>279</height>
+         </rect>
+        </property>
+        <widget class="QGroupBox" name="groupBox_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>361</width>
+           <height>101</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 18px;
+
+color: #000000;
+</string>
+         </property>
+         <property name="title">
+          <string>First Habit</string>
+         </property>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>20</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
+          </property>
+         </widget>
+        </widget>
+       </widget>
       </widget>
       <zorder>groupBox_15</zorder>
-      <zorder>label_5</zorder>
       <zorder>label_6</zorder>
       <zorder>groupBox_6</zorder>
       <zorder>groupBox_7</zorder>
       <zorder>groupBox_8</zorder>
-      <zorder>groupBox_9</zorder>
-      <zorder>groupBox_10</zorder>
+      <zorder>label_22</zorder>
+      <zorder>scrollArea_2</zorder>
      </widget>
     </widget>
    </widget>
@@ -1062,6 +1034,256 @@ background: #4E944F;</string>
      <zorder>label_21</zorder>
      <zorder>backSettings</zorder>
     </widget>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>40</y>
+       <width>370</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+      </property>
+      <property name="text">
+       <string>My Account</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>180</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+      </property>
+      <property name="text">
+       <string>General</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>250</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+      </property>
+      <property name="text">
+       <string>Help and Feedback</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>320</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+      </property>
+      <property name="text">
+       <string>About</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>420</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* CSS */
+QPushButton {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QPushButton:hover {
+  background-color: #2c974b;
+}
+
+QPushButton:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+}
+
+.QPushButton:active {
+  background-color: #298e46;
+}</string>
+      </property>
+      <property name="text">
+       <string>Log Out</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>groupBox_10</zorder>
+    <zorder>groupBox_5</zorder>
    </widget>
   </widget>
  </widget>

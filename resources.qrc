@@ -4,5 +4,12 @@
         <file>pick/Menu.png</file>
         <file>pick/Save.png</file>
         <file>pick/Today.png</file>
+        <file>pick/points.png</file>
+        <file>pick/done.png</file>
+        <file>pick/filled-circle.png</file>
+        <file>pick/user.png</file>
+        <file>pick/about.png</file>
+        <file>pick/exit.png</file>
+        <file>pick/general.png</file>
     </qresource>
 </RCC>

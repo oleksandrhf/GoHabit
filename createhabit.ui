@@ -205,10 +205,10 @@ background: #4E944F;
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
+      <x>310</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -228,14 +228,17 @@ background: #4E944F;
       <x>320</x>
       <y>10</y>
       <width>31</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/img/pick/Save.png</pixmap>
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -308,9 +311,9 @@ background: #4E944F;</string>
    </widget>
    <zorder>label_21</zorder>
    <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
-   <zorder>label_5</zorder>
   </widget>
   <widget class="Line" name="line_2">
    <property name="geometry">
