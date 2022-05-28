@@ -161,6 +161,8 @@ void AddHabit::on_pushButton_2_clicked()
 
 void AddHabit::on_Add_habit_button_clicked()
 {
+    connectDB();
+    addHabit();
     emit backed();
 }
 
