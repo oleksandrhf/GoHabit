@@ -53,8 +53,7 @@ private:
     QDateTime DT;
     TimeCheck TC;
     DropMenu DM;
-    Singleton* s1 = Singleton::getInstance();
-    int user_counter = 5;
+    int user_counter;
     int correctHabitsCounter = 0;
     bool m_loginSuccesfull;
 private slots:
@@ -80,16 +79,15 @@ private slots:
     void FillarrOfId();
     void on_habit_deleted(int i);
     void on_pushButton_11_clicked();
-
     void on_pushButton_8_clicked();
-
     void on_pushButton_13_clicked();
-
     void on_pushButton_15_clicked();
-
     void on_pushButton_17_clicked();
-
     void on_pushButton_19_clicked();
+    void setsizeOfEverything();
+    void on_logged_out();
+signals :
+    void arrfilled();
 };
 
 #endif // MAINWINDOW_H

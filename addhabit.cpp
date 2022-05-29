@@ -12,11 +12,13 @@ AddHabit::AddHabit(QWidget *parent) :
     connect(&c_habit, SIGNAL(back_clicked()),
             this, SLOT(on_back_clicked()));
 
+    connect(&c_habit, SIGNAL(back_clicked()),
+            this, SLOT(showHabitsInCombobox()));
+
     connect(&c_habit, SIGNAL(new_habit_added()),
             this, SLOT(on_habit_created()));
 
     ui->setupUi(this);
-    showHabitsInCombobox();
 }
 
 AddHabit::~AddHabit()
@@ -26,6 +28,8 @@ AddHabit::~AddHabit()
 
 void AddHabit::showHabitsInCombobox()
 {
+   ui->Add_habit_comboBox->clear();
+   Singleton* s1 = Singleton::getInstance();
    connectDB();
    QSqlQuery query1;
    QSqlQuery query2;
@@ -34,14 +38,23 @@ void AddHabit::showHabitsInCombobox()
    QSqlRecord rec2;
    QString str_t;
    rec1 = query1.record();
-   query1.exec("SELECT name_habit "
-              "FROM Habits;");
-
-   query2.exec("SELECT COUNT(*) "
-               "FROM Habits;");
+   str_t = "SELECT name_habit "
+           "FROM Habits"
+           " WHERE id_user = 0"
+           " OR id_user = ";
+   str_t.append(QString::number(s1->GetThisUserId()));
+   str_t.append(";");
+   query1.exec(str_t);
+   str_t = "SELECT COUNT(*) "
+           "FROM Habits"
+           " WHERE id_user = 0"
+           " OR id_user = ";
+   str_t.append(QString::number(s1->GetThisUserId()));
+   str_t.append(";");
+   query2.exec(str_t);
    query2.next();
    rec2 = query2.record();
-   int max_id = rec2.value(0).toInt();
+   int max_id = query2.value(0).toInt();
 
    for(int i = 0; i < max_id + 1; i++)
    {
@@ -82,13 +95,10 @@ QString AddHabit::det_days()
 void AddHabit::addHabit()
 {
     Singleton* s1 = Singleton::getInstance();
-    thisUserId = s1->GetThisUserId();
-
-
     QSqlQuery query;
     QSqlRecord rec;
     QString str_t;
-
+    int i = s1->GetThisUserId();
     rec = query.record();
     query.exec("SELECT COUNT(*) "
                "FROM User_Habits;");
@@ -105,7 +115,7 @@ void AddHabit::addHabit()
                             "VALUES(%1, %2, %3, %4, '%5', '%6', %7);";
     query.exec(str_t
                .arg(habit_counter)
-               .arg(thisUserId)
+               .arg(s1->GetThisUserId())
                .arg(ui->Add_habit_comboBox->currentIndex())
                .arg(0)
                .arg(det_days())

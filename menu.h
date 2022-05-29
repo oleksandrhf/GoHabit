@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QtSql/QtSql>
 #include <QMessageBox>
+#include "dataset.h"
 
 namespace Ui {
 class menu;
@@ -20,7 +21,6 @@ public:
     QSqlDatabase db;
     int id_habit;
     QMessageBox msgBox;
-
 signals:
 
     void Today_clicked();
@@ -45,12 +45,15 @@ private slots:
 
     void on_backSettings_clicked();
 
+    void on_pushButton_8_clicked();
+
 private:
     Ui::menu *ui;
 
 
 
-
+signals:
+    void logged_out();
 
 
 };

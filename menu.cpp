@@ -37,15 +37,11 @@ void menu::on_menuToday_clicked()
 
 void menu::on_pushButton_clicked()
 {
+    int* arrOfId;
+    Singleton* s1 = Singleton::getInstance();
     QString str_t;
-    bool id_habit = false;
-    emit Today_clicked();
-    ui->stackedWidget->setCurrentIndex(1);
-
-   str_t = "SELECT id_habit"
-           "FROM Users_Habit "
-           "WHERE id_habit = 1";
-    if(!id_habit == true)
+    arrOfId = s1->getarrOfId();
+    if(*arrOfId != 0)
     {
         QMessageBox msgBox;
         msgBox.setWindowTitle("Achievements");
@@ -53,6 +49,8 @@ void menu::on_pushButton_clicked()
         msgBox.exec();
 
     }
+    bool id_habit = false;
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void menu::on_pushButton_4_clicked()
@@ -92,3 +90,7 @@ void menu::on_menuButton2_clicked()
 }
 
 
+void menu::on_pushButton_8_clicked()
+{
+    emit logged_out();
+}

@@ -42,14 +42,15 @@ void CreateHabit::on_pushButton_clicked()
     habit_counter = rec.value(0).toInt();
     habit_counter++;
     s1->SetHabitId(habit_counter);
-    str_t               =   "INSERT INTO Habits(id_habit, name_habit, how_long, custom_habit, description)"
-                            "VALUES(%1, '%2', %3, %4, '%5');";
+    str_t               =   "INSERT INTO Habits(id_habit, name_habit, how_long, custom_habit, description, id_user)"
+                            "VALUES(%1, '%2', %3, %4, '%5', %6);";
     query.exec(str_t
                .arg(habit_counter)
                .arg(ui->lineEdit->text())     //додавання нового кристувача в базу
                .arg(ui->horizontalSlider->value())
                .arg(1)
-               .arg(ui->textEdit->toPlainText()));
+               .arg(ui->textEdit->toPlainText())
+               .arg(s1->GetThisUserId()));
     emit new_habit_added();
 }
 

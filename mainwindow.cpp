@@ -4,16 +4,19 @@
 #include "reg_window.h"
 #include "dataset.h"
 #include "timecheck.h"
-
+#include <QApplication>
+#include <QScreen>
 
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui_Main(new Ui::MainWindow)
 {
-    user_counter = 5;
+    user_counter = 0;
     m_loginSuccesfull = false;
-
+    Singleton* s1 = Singleton::getInstance();
+    QScreen * screen = QApplication::primaryScreen();
+    s1->setScreen(screen->size().width(), screen->size().height());
     connect(&TC , SIGNAL(unblockCheck(id_user_Habit)),
             this, SLOT(on_checkboxblocked(id_user_Habit)));
 
@@ -41,6 +44,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&ui_menu,SIGNAL(menuTodayButton()),
            this, SLOT(show()));
 
+    connect(this,SIGNAL(arrfilled()),
+           &ah, SLOT(showHabitsInCombobox()));
+
+
 
     //Сигнали на спрацьовування кнопок
 
@@ -53,7 +60,17 @@ MainWindow::MainWindow(QWidget *parent) :
    FillarrOfId();
    visibleCheck();
    HideMenu();
+    ui_Main->label->setText(QString::number(s1->getScreenX()));
+    ui_Main->label_7->setText(QString::number(s1->getScreenY()));
+    //setsizeOfEverything();
+}
 
+void MainWindow::setsizeOfEverything()
+{
+    Singleton* s1 = Singleton::getInstance();
+    MainWindow::setGeometry(0, 0, s1->getScreenX(), s1->getScreenY());
+    ui_Main->groupBox_8->setGeometry(0, s1->getScreenY() - 150, s1->getScreenX(), 80);
+    ui_Main->groupBox_6->setGeometry(0, 0, s1->getScreenX(), 50);
 }
 
 void MainWindow::SetCheckTime(int id, QDateTime T)
@@ -71,6 +88,7 @@ void MainWindow::SetCheckTime(int id, QDateTime T)
 
 void MainWindow::authorizeUser()
 {
+    Singleton* s1 = Singleton::getInstance();
     m_username          = ui_Auth.getLogin();
     m_userpass          = ui_Auth.getPass();   //зчитування з форми
 
@@ -106,7 +124,9 @@ void MainWindow::authorizeUser()
     }
     else
     {
+        user_counter = 5;
         s1->SetThisUserId(user_counter);
+        int i = s1->GetThisUserId();
         QString s = QString::number(user_counter);
         m_loginSuccesfull = true;
         ui_Auth.close();
@@ -152,7 +172,6 @@ void MainWindow::registerUser()
 
         ui_Reg.hide();
         ui_Auth.show();
-
     }
     else
     {
@@ -189,7 +208,7 @@ void MainWindow::wipeDB() //видалення бази
 void MainWindow::on_pushButton_clicked()
 {
     TimeCheck T;
-
+    emit arrfilled();
     this->close();
     ah.show();
 }
@@ -470,6 +489,7 @@ void MainWindow::on_pushButton_7_clicked()
 
 void MainWindow::FillarrOfId()
 {
+    Singleton* s1 = Singleton::getInstance();
     QSqlQuery query;
     QString str_t;
     int t;
@@ -494,6 +514,7 @@ void MainWindow::FillarrOfId()
             correctHabitsCounter++;
         }
     }
+    s1->setarrOfId(arrayOfId);
 }
 
 
@@ -549,3 +570,7 @@ void MainWindow::on_pushButton_19_clicked()
     on_habit_deleted(4);
 }
 
+void MainWindow::on_logged_out()
+{
+    display();
+}
