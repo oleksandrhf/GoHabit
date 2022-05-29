@@ -1237,8 +1237,6 @@ padding:0px;</string>
    <zorder>widget_3</zorder>
    <zorder>widget_4</zorder>
    <zorder>widget_5</zorder>
-   <zorder>label</zorder>
-   <zorder>label_7</zorder>
   </widget>
  </widget>
  <resources>

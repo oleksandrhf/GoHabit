@@ -12,7 +12,4 @@
         <file>pick/exit.png</file>
         <file>pick/general.png</file>
     </qresource>
-    <qresource prefix="/">
-        <file>settings.qml</file>
-    </qresource>
 </RCC>

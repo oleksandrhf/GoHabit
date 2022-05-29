@@ -90,9 +90,7 @@ void menu::on_menuButton2_clicked()
 }
 
 
-
 void menu::on_pushButton_8_clicked()
 {
     emit logged_out();
 }
-
