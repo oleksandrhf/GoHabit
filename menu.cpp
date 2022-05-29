@@ -41,16 +41,19 @@ void menu::on_pushButton_clicked()
     int* arrOfId;
     Singleton* s1 = Singleton::getInstance();
     arrOfId = s1->getarrOfId();
+    ui->groupBox_8->setVisible(false);
     ui->stackedWidget->setCurrentIndex(1);
+
     if(*arrOfId != 0)
     {
+        ui->groupBox_8->setVisible(true);
         ui->label_22->setText("1");
         ui->label_23->hide();
         ui->label_11->hide();
-        QMessageBox msgBox;
-        msgBox.setWindowTitle("Achievements");
-        msgBox.setText("You create First Habit!\n");
-        msgBox.exec();
+//        QMessageBox msgBox;
+//        msgBox.setWindowTitle("Achievements");
+//        msgBox.setText("You create First Habit!\n");
+//        msgBox.exec();
 
     }
 
@@ -97,3 +100,9 @@ void menu::on_pushButton_8_clicked()
 {
     emit logged_out();
 }
+
+void menu::on_pushButton_9_clicked()
+{
+    ui->groupBox_8->hide();
+}
+
