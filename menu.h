@@ -17,6 +17,7 @@ class menu : public QWidget
 public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
+    QLabel *label_11;
     bool connectDB();
     QSqlDatabase db;
     int id_habit;

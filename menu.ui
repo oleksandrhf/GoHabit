@@ -29,7 +29,7 @@
     <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="Menu_page">
     <widget class="QPushButton" name="pushButton">
@@ -457,37 +457,10 @@ background: #4E944F;</string>
         <height>638</height>
        </rect>
       </property>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>70</y>
-         <width>211</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">width: 148px;
-height: 37px;
-left: 115px;
-top: 147px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 18px;
-
-color: #000000;</string>
-       </property>
-       <property name="text">
-        <string>Ви відкрили      з 5 досягнень</string>
-       </property>
-      </widget>
       <widget class="QGroupBox" name="groupBox_6">
        <property name="geometry">
         <rect>
-         <x>20</x>
+         <x>60</x>
          <y>190</y>
          <width>81</width>
          <height>111</height>
@@ -555,11 +528,41 @@ color: #000000;
          <string>First Habit</string>
         </property>
        </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">position: absolute;
+width: 64px;
+height: 64px;
+left: 152px;
+top: 83px;
+
+background: #C4C4C4;
+
+border-radius: 20;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_7">
        <property name="geometry">
         <rect>
-         <x>140</x>
+         <x>220</x>
          <y>190</y>
          <width>81</width>
          <height>111</height>
@@ -595,7 +598,7 @@ border-radius: 20;</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+         <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -624,23 +627,7 @@ color: #000000;
          <string>Five Habits</string>
         </property>
        </widget>
-      </widget>
-      <widget class="QGroupBox" name="groupBox_8">
-       <property name="geometry">
-        <rect>
-         <x>260</x>
-         <y>190</y>
-         <width>81</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="title">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <widget class="QLabel" name="label_11">
+       <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -670,36 +657,13 @@ border-radius: 20;</string>
          <bool>true</bool>
         </property>
        </widget>
-       <widget class="QLabel" name="label_12">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>51</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 18px;
-
-color: #000000;
-</string>
-        </property>
-        <property name="text">
-         <string>Ten Habits</string>
-        </property>
-       </widget>
       </widget>
       <widget class="QGroupBox" name="groupBox_15">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>0</y>
-         <width>241</width>
+         <x>40</x>
+         <y>10</y>
+         <width>290</width>
          <height>101</height>
         </rect>
        </property>
@@ -718,7 +682,7 @@ color: #000000;
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>100</x>
+          <x>125</x>
           <y>10</y>
           <width>41</width>
           <height>41</height>
@@ -745,18 +709,17 @@ border-radius: 20;</string>
          <bool>true</bool>
         </property>
        </widget>
-      </widget>
-      <widget class="QLabel" name="label_22">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>71</y>
-         <width>16</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">width: 148px;
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>271</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 148px;
 height: 37px;
 left: 115px;
 top: 147px;
@@ -768,10 +731,38 @@ font-size: 15px;
 line-height: 18px;
 
 color: #000000;</string>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
+        </property>
+        <property name="text">
+         <string>You have opened      of 2 achievements</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>135</x>
+          <y>70</y>
+          <width>16</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">width: 148px;
+height: 37px;
+left: 115px;
+top: 147px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QScrollArea" name="scrollArea_2">
        <property name="geometry">
@@ -803,11 +794,19 @@ color: #000000;</string>
            <height>101</height>
           </rect>
          </property>
+         <property name="font">
+          <font>
+           <family>Inter</family>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 12px;
 line-height: 18px;
 
 color: #000000;
@@ -831,16 +830,146 @@ color: #000000;
           <property name="pixmap">
            <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
           </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>151</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Inter</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Create your First Habit.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>20</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_11">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>361</width>
+           <height>101</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Inter</family>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+
+color: #000000;
+</string>
+         </property>
+         <property name="title">
+          <string>Five Habits</string>
+         </property>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>20</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="resources.qrc">:/img/pick/pick/done.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>151</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Inter</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Create more than 5 habits.</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>20</y>
+            <width>71</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="resources.qrc">:/img/pick/pick/filled-circle.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
          </widget>
         </widget>
        </widget>
       </widget>
       <zorder>groupBox_15</zorder>
-      <zorder>label_6</zorder>
       <zorder>groupBox_6</zorder>
       <zorder>groupBox_7</zorder>
-      <zorder>groupBox_8</zorder>
-      <zorder>label_22</zorder>
       <zorder>scrollArea_2</zorder>
      </widget>
     </widget>
