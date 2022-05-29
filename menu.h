@@ -21,6 +21,8 @@ public:
     QSqlDatabase db;
     int id_habit;
     QMessageBox msgBox;
+
+
 signals:
 
     void Today_clicked();

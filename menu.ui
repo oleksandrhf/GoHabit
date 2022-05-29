@@ -29,7 +29,7 @@
     <string notr="true">background: #E9EFC0;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="Menu_page">
     <widget class="QPushButton" name="pushButton">
@@ -946,7 +946,7 @@ background: #4E944F;</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>361</width>
+       <width>360</width>
        <height>51</height>
       </rect>
      </property>
@@ -1038,9 +1038,9 @@ background: #4E944F;</string>
      <property name="geometry">
       <rect>
        <x>-10</x>
-       <y>40</y>
-       <width>370</width>
-       <height>601</height>
+       <y>50</y>
+       <width>371</width>
+       <height>589</height>
       </rect>
      </property>
      <property name="title">

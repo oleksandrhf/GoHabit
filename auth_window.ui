@@ -178,7 +178,7 @@ QPushButton:disabled {
     <rect>
      <x>70</x>
      <y>223</y>
-     <width>63</width>
+     <width>161</width>
      <height>20</height>
     </rect>
    </property>
@@ -211,7 +211,7 @@ color: #000000;
     <rect>
      <x>70</x>
      <y>283</y>
-     <width>63</width>
+     <width>151</width>
      <height>20</height>
     </rect>
    </property>
