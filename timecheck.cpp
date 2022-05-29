@@ -53,7 +53,7 @@ void TimeCheck::DateCheck(int id_user_Habit, bool value)
     query.exec(str_t);
     query.next();
     checkTime = query.value(0).toInt();
-    if(currDateTime.toSecsSinceEpoch() - checkTime > 86400 && checkTime != 0)
+    if(currDateTime.toSecsSinceEpoch() - checkTime > 86400 || checkTime == 0)
     {
         AddToProgress(value, id_user_Habit);
     }

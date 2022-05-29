@@ -11,5 +11,9 @@
         <file>pick/about.png</file>
         <file>pick/exit.png</file>
         <file>pick/general.png</file>
+        <file>pick/3 points.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>settings.qml</file>
     </qresource>
 </RCC>

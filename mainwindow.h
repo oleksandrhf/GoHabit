@@ -63,11 +63,6 @@ private slots:
     void on_pushButton_clicked();
     void on_go_back();
     void on_pushButton_2_clicked();
-    void on_checkBox_stateChanged(int arg1);
-    void on_checkBox_2_stateChanged(int arg1);
-    void on_checkBox_3_stateChanged(int arg1);
-    void on_checkBox_4_stateChanged(int arg1);
-    void on_checkBox_5_stateChanged(int arg1);
     void on_menuButton_clicked();
     void menuTodayButton();
     void on_pushButton_3_clicked();
@@ -86,6 +81,14 @@ private slots:
     void on_pushButton_19_clicked();
     void setsizeOfEverything();
     void on_logged_out();
+    void blockCheckbox(bool state);
+    void setStateOfCheckBox(int i, bool state);
+    void on_checkBox_clicked();
+    void on_checkBox_2_clicked();
+    void on_checkBox_3_clicked();
+    void on_checkBox_4_clicked();
+    void on_checkBox_5_clicked();
+
 signals :
     void arrfilled();
 };

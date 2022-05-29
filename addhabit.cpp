@@ -94,13 +94,14 @@ QString AddHabit::det_days()
 
 void AddHabit::addHabit()
 {
+    fillarrOfIndex();
     Singleton* s1 = Singleton::getInstance();
     QSqlQuery query;
     QSqlRecord rec;
     QString str_t;
     int i = s1->GetThisUserId();
     rec = query.record();
-    query.exec("SELECT COUNT(*) "
+    query.exec("SELECT MAX(id_user_habit) "
                "FROM User_Habits;");
     query.next();
     rec = query.record();
@@ -116,7 +117,7 @@ void AddHabit::addHabit()
     query.exec(str_t
                .arg(habit_counter)
                .arg(s1->GetThisUserId())
-               .arg(ui->Add_habit_comboBox->currentIndex())
+               .arg(arrayOfIndex[ui->Add_habit_comboBox->currentIndex() - 1])
                .arg(0)
                .arg(det_days())
                .arg(ui->timeEdit->time().toString())
@@ -125,12 +126,44 @@ void AddHabit::addHabit()
 }
 
 
+void AddHabit::fillarrOfIndex()
+{
+    Singleton* s1 = Singleton::getInstance();
+    QSqlQuery query;
+    QString str_t;
+    int t;
+    for(int i = 0; i < 15 ;i++)
+    {
+        arrayOfIndex[i] = 0;
+    }
+    str_t = "SELECT id_habit "
+            "FROM Habits "
+            "WHERE id_user = ";
+    str_t.append(QString::number(s1->GetThisUserId()));
+    str_t.append(" OR id_user = 0");
+    str_t.append(";");
+    query.exec(str_t);
+    for (int i = 0; i < 15 ;i++ )
+    {
+        query.next();
+        t = query.value(0).toInt();
+        arrayOfIndex[i] = t;
+    }
+}
+
+int AddHabit::getIdOfCombobox(int i)
+{
+    return 0;
+}
+
 
 void AddHabit::on_habit_created()
 {
+
     this->show();
     ui->Add_habit_comboBox->clear();
     showHabitsInCombobox();
+    fillarrOfIndex();
     c_habit.hide();
 }
 
