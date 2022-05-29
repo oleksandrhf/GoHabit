@@ -28,3 +28,32 @@ QDateTime Singleton::GettimeOfCheck()
     return timeOfCheck;
 }
 
+void Singleton::setScreen(int x, int y)
+{
+    this->screenX = x;
+    this->screenY = y;
+}
+
+int Singleton::getScreenX()
+{
+    return this->screenX;
+}
+
+int Singleton::getScreenY()
+{
+    return this->screenY;
+}
+
+void Singleton::setarrOfId(int arr[])
+{
+    for(int i = 0; i <5 ; i++)
+    {
+        this->arrOfId[i] = arr[i];
+    }
+}
+
+int* Singleton::getarrOfId()
+{
+    return this->arrOfId;
+}
+
