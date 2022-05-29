@@ -37,20 +37,23 @@ void menu::on_menuToday_clicked()
 
 void menu::on_pushButton_clicked()
 {
+
     int* arrOfId;
     Singleton* s1 = Singleton::getInstance();
-    QString str_t;
     arrOfId = s1->getarrOfId();
+    ui->stackedWidget->setCurrentIndex(1);
     if(*arrOfId != 0)
     {
+        ui->label_22->setText("1");
+        ui->label_23->hide();
+        ui->label_11->hide();
         QMessageBox msgBox;
         msgBox.setWindowTitle("Achievements");
         msgBox.setText("You create First Habit!\n");
         msgBox.exec();
 
     }
-    bool id_habit = false;
-    ui->stackedWidget->setCurrentIndex(1);
+
 }
 
 void menu::on_pushButton_4_clicked()
