@@ -136,11 +136,11 @@ background: #4E944F;</string>
       <x>20</x>
       <y>60</y>
       <width>321</width>
-      <height>441</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border: 0px solid;</string>
     </property>
     <property name="widgetResizable">
      <bool>true</bool>
@@ -150,18 +150,23 @@ background: #4E944F;</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>319</width>
-       <height>439</height>
+       <width>321</width>
+       <height>501</height>
       </rect>
      </property>
      <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>270</y>
-        <width>297</width>
+        <y>290</y>
+        <width>300</width>
         <height>81</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#B4E197;
+border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;</string>
       </property>
       <property name="title">
        <string/>
@@ -171,9 +176,13 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>241</width>
+         <width>210</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;
+border-radius: 6px;</string>
        </property>
        <property name="text">
         <string>TextLabel</string>
@@ -185,11 +194,22 @@ background: #4E944F;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>18</x>
          <y>40</y>
          <width>21</width>
-         <height>24</height>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+width : 18px;
+height : 18px;
+
+
+}
+QCheckBox{
+border: 0px;
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -203,6 +223,9 @@ background: #4E944F;</string>
          <width>16</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px;</string>
        </property>
        <property name="text">
         <string/>
@@ -218,14 +241,25 @@ background: #4E944F;</string>
       <widget class="QProgressBar" name="progressBar_4">
        <property name="geometry">
         <rect>
-         <x>40</x>
+         <x>50</x>
          <y>40</y>
          <width>211</width>
          <height>23</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QProgressBar
+{
+border: 1px solid grey;
+border-radius: 6px;
+color: black;
+text-align:center;
+}
+QProgressBar::chunk 
+{
+background-color: #05B8CC;
+border-radius :6px;
+}      </string>
        </property>
        <property name="value">
         <number>24</number>
@@ -240,10 +274,15 @@ background: #4E944F;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>360</y>
-        <width>301</width>
-        <height>71</height>
+        <y>380</y>
+        <width>300</width>
+        <height>81</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#B4E197;
+border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;</string>
       </property>
       <property name="title">
        <string/>
@@ -253,9 +292,13 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>261</width>
+         <width>210</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;
+border-radius: 6px;</string>
        </property>
        <property name="text">
         <string>TextLabel</string>
@@ -267,11 +310,22 @@ background: #4E944F;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>40</y>
+         <x>18</x>
+         <y>43</y>
          <width>21</width>
-         <height>24</height>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+width : 18px;
+height : 18px;
+
+
+}
+QCheckBox{
+border: 0px;
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -285,6 +339,9 @@ background: #4E944F;</string>
          <width>16</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px;</string>
        </property>
        <property name="text">
         <string/>
@@ -300,14 +357,25 @@ background: #4E944F;</string>
       <widget class="QProgressBar" name="progressBar_5">
        <property name="geometry">
         <rect>
-         <x>40</x>
+         <x>50</x>
          <y>40</y>
          <width>211</width>
          <height>23</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QProgressBar
+{
+border: 1px solid grey;
+border-radius: 6px;
+color: black;
+text-align:center;
+}
+QProgressBar::chunk 
+{
+background-color: #05B8CC;
+border-radius :6px;
+}      </string>
        </property>
        <property name="value">
         <number>24</number>
@@ -323,12 +391,14 @@ background: #4E944F;</string>
        <rect>
         <x>10</x>
         <y>20</y>
-        <width>297</width>
+        <width>300</width>
         <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color:#B4E197;
+border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;</string>
       </property>
       <property name="title">
        <string/>
@@ -338,7 +408,7 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>231</width>
+         <width>210</width>
          <height>20</height>
         </rect>
        </property>
@@ -352,11 +422,22 @@ background: #4E944F;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>18</x>
          <y>40</y>
          <width>21</width>
-         <height>24</height>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+width : 18px;
+height : 18px;
+
+
+}
+QCheckBox{
+border: 0px;
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -372,7 +453,7 @@ background: #4E944F;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">border: 0px;</string>
        </property>
        <property name="text">
         <string/>
@@ -395,7 +476,18 @@ background: #4E944F;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QProgressBar
+{
+border: 1px solid grey;
+border-radius: 6px;
+color: black;
+text-align: center;
+}
+QProgressBar::chunk 
+{
+background-color: #05B8CC;
+border-radius :6px;
+}      </string>
        </property>
        <property name="value">
         <number>24</number>
@@ -406,10 +498,15 @@ background: #4E944F;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>190</y>
-        <width>297</width>
-        <height>71</height>
+        <y>200</y>
+        <width>300</width>
+        <height>81</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#B4E197;
+border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;</string>
       </property>
       <property name="title">
        <string/>
@@ -419,9 +516,13 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>211</width>
+         <width>210</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;
+border-radius: 6px;</string>
        </property>
        <property name="text">
         <string>TextLabel</string>
@@ -433,11 +534,22 @@ background: #4E944F;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>18</x>
          <y>40</y>
          <width>21</width>
-         <height>24</height>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+width : 18px;
+height : 18px;
+
+
+}
+QCheckBox{
+border: 0px;
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -451,6 +563,9 @@ background: #4E944F;</string>
          <width>16</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px;</string>
        </property>
        <property name="text">
         <string/>
@@ -473,7 +588,18 @@ background: #4E944F;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QProgressBar
+{
+border: 1px solid grey;
+border-radius: 6px;
+color: black;
+text-align:center;
+}
+QProgressBar::chunk 
+{
+background-color: #05B8CC;
+border-radius :6px;
+}      </string>
        </property>
        <property name="value">
         <number>24</number>
@@ -489,12 +615,14 @@ background: #4E944F;</string>
        <rect>
         <x>10</x>
         <y>110</y>
-        <width>297</width>
-        <height>71</height>
+        <width>300</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color:#B4E197;
+border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;</string>
       </property>
       <property name="title">
        <string/>
@@ -504,9 +632,13 @@ background: #4E944F;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>211</width>
+         <width>210</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;
+border-radius: 6px;</string>
        </property>
        <property name="text">
         <string>Фіолетовий</string>
@@ -518,11 +650,22 @@ background: #4E944F;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>18</x>
          <y>40</y>
          <width>21</width>
-         <height>24</height>
+         <height>21</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+width : 18px;
+height : 18px;
+
+
+}
+QCheckBox{
+border: 0px;
+}</string>
        </property>
        <property name="text">
         <string/>
@@ -536,6 +679,9 @@ background: #4E944F;</string>
          <width>16</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px;</string>
        </property>
        <property name="text">
         <string/>
@@ -558,7 +704,18 @@ background: #4E944F;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QProgressBar
+{
+border: 1px solid grey;
+border-radius: 6px;
+color: black;
+text-align:center;
+}
+QProgressBar::chunk 
+{
+background-color: #05B8CC;
+border-radius :6px;
+}      </string>
        </property>
        <property name="value">
         <number>24</number>
@@ -895,7 +1052,7 @@ padding:0px;</string>
     <property name="geometry">
      <rect>
       <x>236</x>
-      <y>290</y>
+      <y>305</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -999,7 +1156,7 @@ padding:0px;</string>
     <property name="geometry">
      <rect>
       <x>236</x>
-      <y>370</y>
+      <y>390</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -1103,7 +1260,7 @@ padding:0px;</string>
     <property name="geometry">
      <rect>
       <x>236</x>
-      <y>460</y>
+      <y>480</y>
       <width>81</width>
       <height>61</height>
      </rect>
@@ -1203,34 +1360,6 @@ padding:0px;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>530</y>
-      <width>63</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>530</y>
-      <width>63</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <zorder>label</zorder>
-   <zorder>label_7</zorder>
    <zorder>scrollArea</zorder>
    <zorder>groupBox_6</zorder>
    <zorder>groupBox_8</zorder>

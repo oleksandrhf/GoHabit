@@ -60,8 +60,6 @@ MainWindow::MainWindow(QWidget *parent) :
    FillarrOfId();
    visibleCheck();
    HideMenu();
-    ui_Main->label->setText(QString::number(s1->getScreenX()));
-    ui_Main->label_7->setText(QString::number(s1->getScreenY()));
     //setsizeOfEverything();
 }
 
