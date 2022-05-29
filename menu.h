@@ -17,6 +17,7 @@ class menu : public QWidget
 public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
+    QLabel *label_11;
     bool connectDB();
     QSqlDatabase db;
     int id_habit;
@@ -48,6 +49,8 @@ private slots:
     void on_backSettings_clicked();
 
     void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
 
 private:
     Ui::menu *ui;

@@ -61,7 +61,7 @@ MainWindow::MainWindow(QWidget *parent) :
    FillarrOfId();
    visibleCheck();
    HideMenu();
-   //setsizeOfEverything();
+    //setsizeOfEverything();
 }
 
 void MainWindow::setsizeOfEverything()

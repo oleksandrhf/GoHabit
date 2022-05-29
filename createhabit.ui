@@ -48,67 +48,47 @@ border:2px solid #87bbff;
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>45</x>
-     <y>530</y>
-     <width>270</width>
-     <height>16</height>
+     <x>60</x>
+     <y>550</y>
+     <width>250</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QSlider::groove:horizontal {
-border: 1px solid #bbb;
-background: red;
-height: 10px;
-border-radius: 4px;
+    <string notr="true">QSlider:horizontal {
+    min-height: 60px;
 }
-QSlider::sub-page:horizontal {
-background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
-    stop: 0 #66e, stop: 1 #bbf);
-background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
-    stop: 0 #bbf, stop: 1 #55f);
-border: 1px solid #777;
-height: 10px;
-border-radius: 4px;
+QSlider::groove:horizontal {
+    height: 1px;
+    background: green; 
 }
-
-QSlider::add-page:horizontal {
-background: #fff;
-border: 1px solid #777;
-height: 10px;
-border-radius: 4px;
-}
-
 QSlider::handle:horizontal {
-background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-    stop:0 #eee, stop:1 #ccc);
-border: 1px solid #777;
-width: 13px;
-margin-top: -2px;
-margin-bottom: -2px;
-border-radius: 4px;
+    width: 30px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 15px;
+    background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(210, 210, 210, 255), stop:0.7 rgba(210, 210, 210, 100));
 }
-
 QSlider::handle:horizontal:hover {
-background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-    stop:0 #fff, stop:1 #ddd);
-border: 1px solid #444;
-border-radius: 4px;
+    background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(255, 255, 255, 255), stop:0.7 rgba(255, 255, 255, 100));
 }
-
-QSlider::sub-page:horizontal:disabled {
-background: #bbb;
-border-color: #999;
+/*竖向*/
+QSlider:vertical {
+    min-width: 60px;
 }
-
-QSlider::add-page:horizontal:disabled {
-background: #eee;
-border-color: #999;
+QSlider::groove:vertical {
+    width: 1px;
+    background: white; 
 }
-
-QSlider::handle:horizontal:disabled {
-background: #eee;
-border: 1px solid #aaa;
-border-radius: 4px;
+QSlider::handle:vertical {
+    height: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 15px;
+    background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(210, 210, 210, 255), stop:0.7 rgba(210, 210, 210, 100));
+}
+QSlider::handle:vertical:hover {
+    background: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(255, 255, 255, 255), stop:0.7 rgba(255, 255, 255, 100));
 }</string>
    </property>
    <property name="minimum">
@@ -130,8 +110,8 @@ border-radius: 4px;
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>570</y>
+     <x>130</x>
+     <y>600</y>
      <width>231</width>
      <height>41</height>
     </rect>
@@ -350,8 +330,8 @@ background: #4E944F;</string>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>510</y>
+     <x>130</x>
+     <y>530</y>
      <width>211</width>
      <height>16</height>
     </rect>
@@ -383,7 +363,7 @@ background: #4E944F;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>460</y>
+     <y>480</y>
      <width>341</width>
      <height>20</height>
     </rect>

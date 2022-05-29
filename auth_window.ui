@@ -60,7 +60,7 @@ QPushButton:disabled {
   color: rgba(255, 255, 255, .8);
 }
 
-.QPushButton:active {
+QPushButton:active {
   background-color: #298e46;
 }</string>
    </property>
@@ -156,7 +156,7 @@ QPushButton:disabled {
   color: rgba(255, 255, 255, .8);
 }
 
-.QPushButton:active {
+QPushButton:active {
   background-color: #298e46;
 }</string>
    </property>

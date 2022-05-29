@@ -19,14 +19,19 @@
   <widget class="QComboBox" name="Add_habit_comboBox">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>90</x>
      <y>100</y>
-     <width>341</width>
+     <width>191</width>
      <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: #c4c4c4;</string>
+    <string notr="true">QComboBox::indicator{
+    background-color:transparent;
+    selection-background-color:transparent;
+    color:transparent;
+    selection-color:transparent;
+}</string>
    </property>
    <property name="currentIndex">
     <number>-1</number>
@@ -38,14 +43,25 @@
   <widget class="QTimeEdit" name="timeEdit">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>270</y>
-     <width>341</width>
+     <x>130</x>
+     <y>300</y>
+     <width>81</width>
      <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: #c4c4c4;</string>
+    <string notr="true">QTimeEdit::MinuteSection{
+stepBy:10;
+}
+
+QTimeEdit QAbstractSpinBox{
+stepEnabled: True;
+}
+
+QTimeEdit QAbstractSpinBox::MinuteSection {
+stepEnabled: True;
+stepBy:10;
+}</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -65,7 +81,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>220</y>
+     <y>240</y>
      <width>341</width>
      <height>20</height>
     </rect>
@@ -97,7 +113,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>300</y>
+     <y>350</y>
      <width>341</width>
      <height>20</height>
     </rect>
@@ -112,7 +128,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>140</x>
      <y>150</y>
      <width>261</width>
      <height>16</height>
@@ -132,7 +148,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Chose a habit</string>
+    <string>Choose a habit</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox_2">
@@ -294,7 +310,7 @@ background: #4E944F;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -328,7 +344,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -356,7 +372,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -384,7 +400,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -412,7 +428,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -440,7 +456,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -468,7 +484,7 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>310</x>
-     <y>170</y>
+     <y>190</y>
      <width>41</width>
      <height>40</height>
     </rect>
@@ -496,13 +512,13 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>180</y>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Mon</string>
@@ -511,14 +527,14 @@ background-color:#2A64BB;
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>180</y>
+     <x>72</x>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Tue</string>
@@ -528,13 +544,13 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>180</y>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Wed</string>
@@ -544,13 +560,13 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>180</y>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Thu</string>
@@ -560,13 +576,13 @@ background-color:#2A64BB;
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>180</y>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Fri</string>
@@ -575,30 +591,30 @@ background-color:#2A64BB;
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>180</y>
+     <x>272</x>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
-    <string>Sut</string>
+    <string>Sat</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>180</y>
+     <y>170</y>
      <width>25</width>
      <height>16</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:#c4c4c4;</string>
+    <string notr="true">  background-image: none; </string>
    </property>
    <property name="text">
     <string>Sun</string>
