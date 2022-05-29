@@ -1229,6 +1229,8 @@ padding:0px;</string>
      <string>TextLabel</string>
     </property>
    </widget>
+   <zorder>label</zorder>
+   <zorder>label_7</zorder>
    <zorder>scrollArea</zorder>
    <zorder>groupBox_6</zorder>
    <zorder>groupBox_8</zorder>
