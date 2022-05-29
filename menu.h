@@ -2,6 +2,9 @@
 #define MENU_H
 
 #include <QWidget>
+#include <QtSql/QtSql>
+#include <QMessageBox>
+#include "dataset.h"
 
 namespace Ui {
 class menu;
@@ -14,6 +17,12 @@ class menu : public QWidget
 public:
     explicit menu(QWidget *parent = nullptr);
     ~menu();
+    bool connectDB();
+    QSqlDatabase db;
+    int id_habit;
+    QMessageBox msgBox;
+
+
 signals:
 
     void Today_clicked();
@@ -38,12 +47,15 @@ private slots:
 
     void on_backSettings_clicked();
 
+    void on_pushButton_8_clicked();
+
 private:
     Ui::menu *ui;
 
 
 
-
+signals:
+    void logged_out();
 
 
 };

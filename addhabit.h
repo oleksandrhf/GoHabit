@@ -30,7 +30,7 @@ public:
     bool connectDB();
     void wipeDB();
     void addHabit();
-    void showHabitsInCombobox();
+
     QString det_days();
     void GetIdHabit();
 private:
@@ -41,8 +41,8 @@ private:
     QString db_input;
     QSqlDatabase db;
     int habit_counter;
-    int thisUserId;
     int thisHabitId;
+    int thisUserId;
 signals:
     void backed();
 private slots:
@@ -51,6 +51,9 @@ private slots:
     void on_back_clicked();
     void on_pushButton_4_clicked(); 
     void on_add_button_clicked();
+    void on_pushButton_2_clicked();
+    void on_Add_habit_button_clicked();
+    void showHabitsInCombobox();
 };
 
 #endif // ADDHABIT_H

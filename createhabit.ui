@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-  <string notr="true">background:#E9EFC0;</string>
+   <string notr="true">background:#E9EFC0;</string>
   </property>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
@@ -205,10 +205,10 @@ background: #4E944F;
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
+      <x>310</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -228,14 +228,17 @@ background: #4E944F;
       <x>320</x>
       <y>10</y>
       <width>31</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>  
+     <pixmap resource="resources.qrc">:/img/pick/pick/Save.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -308,117 +311,9 @@ background: #4E944F;</string>
    </widget>
    <zorder>label_21</zorder>
    <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
-   <zorder>label_5</zorder>
-  </widget>
-  <widget class="Line" name="line_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>480</y>
-     <width>340</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: medium none;
-  background-image: none; 
-  background: transparent;
-  float: left;
-  background-color: transparent;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>10</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/img/pick/Save.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>:/img/pick/Back.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: medium none;
-  background-image: none; 
-  background: transparent;
-  float: left;
-  background-color: transparent;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <zorder>label_5</zorder>
-   <zorder>label_4</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-  </widget>
-  <widget class="Line" name="line_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>200</y>
-     <width>340</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -436,7 +331,7 @@ background: #4E944F;</string>
     <string>Name:</string>
    </property>
   </widget>
-  <widget class="Line" name="line_3">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -448,7 +343,7 @@ background: #4E944F;</string>
    <property name="styleSheet">
     <string notr="true">color: #000000;</string>
    </property>
-   <property name="text" stdset="0">
+   <property name="text">
     <string>Description:</string>
    </property>
   </widget>
@@ -466,6 +361,38 @@ background: #4E944F;</string>
    </property>
    <property name="text">
     <string>(We recommend 21 days)</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
  </widget>

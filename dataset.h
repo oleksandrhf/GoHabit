@@ -12,6 +12,9 @@ class Singleton
     Singleton& operator=( Singleton& );
     int thisUserId;
     int habitId;
+    int screenX;
+    int screenY;
+    int arrOfId[5];
     QDateTime timeOfCheck;
   public:
     static Singleton * getInstance() {
@@ -25,6 +28,13 @@ class Singleton
     QDateTime GettimeOfCheck();
     void SetHabitId(int S);
     int GetHabitId();
+    int getScreenY();
+    int getScreenX();
+    void setScreen(int x, int y);
+    void setarrOfId(int arr[]);
+    int* getarrOfId();
+
+
 };
 
 #endif // DATASET_H
