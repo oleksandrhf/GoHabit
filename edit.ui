@@ -246,9 +246,6 @@ background: #4E944F;</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>241</width>
      <height>16</height>
     </rect>
    </property>
@@ -259,9 +256,6 @@ background: #4E944F;</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>190</y>
-     <width>261</width>
      <height>16</height>
     </rect>
    </property>
@@ -618,9 +612,6 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>520</y>
-     <width>261</width>
      <height>41</height>
     </rect>
    </property>
