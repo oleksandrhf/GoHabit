@@ -412,6 +412,10 @@ border: 1px solid rgba(27, 31, 35, .15);
          <height>20</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid grey;
+border-radius: 6px;</string>
+       </property>
        <property name="text">
         <string>Чорний</string>
        </property>
