@@ -215,13 +215,29 @@ border: 0px;
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QProgressBar" name="progressBar_4">
        <property name="geometry">
         <rect>
-         <x>270</x>
+         <x>40</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
          <y>10</y>
-         <width>16</width>
-         <height>41</height>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -230,15 +246,14 @@ border: 0px;
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/pick/pick/3 points.png</pixmap>
        </property>
-       <property name="flat">
+       <property name="scaledContents">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QProgressBar" name="progressBar_4">
+      <widget class="QPushButton" name="pushButton_6">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -261,14 +276,10 @@ background-color: #05B8CC;
 border-radius :6px;
 }      </string>
        </property>
-       <property name="value">
-        <number>24</number>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
-      <zorder>label_5</zorder>
-      <zorder>checkBox_4</zorder>
-      <zorder>progressBar_4</zorder>
-      <zorder>pushButton_6</zorder>
      </widget>
      <widget class="QGroupBox" name="groupBox_5">
       <property name="geometry">
@@ -331,13 +342,29 @@ border: 0px;
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QProgressBar" name="progressBar_5">
        <property name="geometry">
         <rect>
-         <x>270</x>
+         <x>40</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
          <y>10</y>
-         <width>16</width>
-         <height>41</height>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -346,17 +373,24 @@ border: 0px;
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/pick/pick/3 points.png</pixmap>
        </property>
-       <property name="flat">
+       <property name="scaledContents">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QProgressBar" name="progressBar_5">
+      <widget class="QPushButton" name="pushButton_7">
        <property name="geometry">
         <rect>
+         <x>240</x>
+         <y>0</y>
+         <width>51</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
          <x>50</x>
          <y>40</y>
          <width>211</width>
@@ -377,13 +411,14 @@ background-color: #05B8CC;
 border-radius :6px;
 }      </string>
        </property>
-       <property name="value">
-        <number>24</number>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
       <zorder>progressBar_5</zorder>
       <zorder>checkBox_5</zorder>
       <zorder>label_6</zorder>
+      <zorder>label_15</zorder>
       <zorder>pushButton_7</zorder>
      </widget>
      <widget class="QGroupBox" name="groupBox">
@@ -447,29 +482,6 @@ border: 0px;
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="geometry">
-        <rect>
-         <x>270</x>
-         <y>10</y>
-         <width>16</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border: 0px;</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="QProgressBar" name="progressBar">
        <property name="geometry">
         <rect>
@@ -477,6 +489,41 @@ border: 0px;
          <y>40</y>
          <width>211</width>
          <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 0px;</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/pick/pick/3 points.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>0</y>
+         <width>51</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -493,8 +540,11 @@ background-color: #05B8CC;
 border-radius :6px;
 }      </string>
        </property>
-       <property name="value">
-        <number>24</number>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </widget>
@@ -559,13 +609,29 @@ border: 0px;
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QProgressBar" name="progressBar_3">
        <property name="geometry">
         <rect>
-         <x>270</x>
+         <x>50</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
          <y>10</y>
-         <width>16</width>
-         <height>41</height>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -574,21 +640,20 @@ border: 0px;
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/pick/pick/3 points.png</pixmap>
        </property>
-       <property name="flat">
+       <property name="scaledContents">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QProgressBar" name="progressBar_3">
+      <widget class="QPushButton" name="pushButton_5">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
+         <x>240</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -605,14 +670,15 @@ background-color: #05B8CC;
 border-radius :6px;
 }      </string>
        </property>
-       <property name="value">
-        <number>24</number>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
       <zorder>progressBar_3</zorder>
       <zorder>label_4</zorder>
-      <zorder>pushButton_5</zorder>
       <zorder>checkBox_3</zorder>
+      <zorder>label_13</zorder>
+      <zorder>pushButton_5</zorder>
      </widget>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
@@ -675,13 +741,29 @@ border: 0px;
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QProgressBar" name="progressBar_2">
        <property name="geometry">
         <rect>
-         <x>270</x>
+         <x>50</x>
+         <y>40</y>
+         <width>211</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
          <y>10</y>
-         <width>16</width>
-         <height>41</height>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -690,21 +772,20 @@ border: 0px;
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset resource="resources.qrc">
-         <normaloff>:/img/pick/pick/points.png</normaloff>:/img/pick/pick/points.png</iconset>
+       <property name="pixmap">
+        <pixmap resource="resources.qrc">:/img/pick/pick/3 points.png</pixmap>
        </property>
-       <property name="flat">
+       <property name="scaledContents">
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QProgressBar" name="progressBar_2">
+      <widget class="QPushButton" name="pushButton_4">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>40</y>
-         <width>211</width>
-         <height>23</height>
+         <x>240</x>
+         <y>10</y>
+         <width>51</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -721,8 +802,8 @@ background-color: #05B8CC;
 border-radius :6px;
 }      </string>
        </property>
-       <property name="value">
-        <number>24</number>
+       <property name="flat">
+        <bool>true</bool>
        </property>
       </widget>
      </widget>
@@ -834,439 +915,13 @@ text-align: bottom;</string>
     <zorder>menuButton</zorder>
     <zorder>pushButton_2</zorder>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>236</x>
-      <y>120</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>-apple-system</family>
-      <pointsize>-1</pointsize>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">/*QWidget {
-border-radius: 15px;
-border:2px solid #0d0d0d;
-}*/
-QWidget {
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  color: #fff;
-  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
-  font-size: 8px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-QWidget:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-QWidget:hover {
-  background-color: #2c974b;
-}
-
-QWidget:disabled {
-  background-color: #94d3a2;
-  /*border-color: rgba(27, 31, 35, .1);*/
-border:2px solid #000000;
-  color: rgba(255, 255, 255, .8);
-}
-
-.QWidget:active {
-  background-color: #298e46;
-}</string>
-    </property>
-    <widget class="QPushButton" name="pushButton_8">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_20">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>5</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>-apple-system</family>
-       <pointsize>-1</pointsize>
-       <bold>true</bold>
-       <underline>false</underline>
-       <strikeout>false</strikeout>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Edit</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_2" native="true">
-    <property name="geometry">
-     <rect>
-      <x>236</x>
-      <y>210</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>-apple-system</family>
-      <pointsize>-1</pointsize>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget {
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  color: #fff;
-  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
-  font-size: 8px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-QWidget:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-QWidget:hover {
-  background-color: #2c974b;
-}
-
-QWidget:disabled {
-  background-color: #94d3a2;
-  /*border-color: rgba(27, 31, 35, .1);*/
-border:2px solid #000000;
-  color: rgba(255, 255, 255, .8);
-}
-
-.QWidget:active {
-  background-color: #298e46;
-}</string>
-    </property>
-    <widget class="QPushButton" name="pushButton_12">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>5</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Edit</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_13">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_3" native="true">
-    <property name="geometry">
-     <rect>
-      <x>236</x>
-      <y>305</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>-apple-system</family>
-      <pointsize>-1</pointsize>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget {
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  color: #fff;
-  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
-  font-size: 8px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-QWidget:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-QWidget:hover {
-  background-color: #2c974b;
-}
-
-QWidget:disabled {
-  background-color: #94d3a2;
-  /*border-color: rgba(27, 31, 35, .1);*/
-border:2px solid #000000;
-  color: rgba(255, 255, 255, .8);
-}
-
-.QWidget:active {
-  background-color: #298e46;
-}</string>
-    </property>
-    <widget class="QPushButton" name="pushButton_14">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>5</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Edit</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_15">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="widget_4" native="true">
-    <property name="geometry">
-     <rect>
-      <x>236</x>
-      <y>390</y>
-      <width>81</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>-apple-system</family>
-      <pointsize>-1</pointsize>
-      <bold>true</bold>
-      <underline>false</underline>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget {
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  color: #fff;
-  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
-  font-size: 8px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-
-QWidget:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-QWidget:hover {
-  background-color: #2c974b;
-}
-
-QWidget:disabled {
-  background-color: #94d3a2;
-  /*border-color: rgba(27, 31, 35, .1);*/
-border:2px solid #000000;
-  color: rgba(255, 255, 255, .8);
-}
-
-.QWidget:active {
-  background-color: #298e46;
-}</string>
-    </property>
-    <widget class="QPushButton" name="pushButton_16">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>5</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Edit</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_17">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background:#83BD75;
-font-size:10px;
-
-padding:0px;</string>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
    <widget class="QWidget" name="widget_5" native="true">
     <property name="geometry">
      <rect>
-      <x>236</x>
-      <y>480</y>
-      <width>81</width>
-      <height>61</height>
+      <x>80</x>
+      <y>440</y>
+      <width>191</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -1323,14 +978,23 @@ border:2px solid #000000;
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>5</y>
-       <width>61</width>
-       <height>21</height>
+       <y>7</y>
+       <width>171</width>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>-apple-system</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
      </property>
      <property name="styleSheet">
       <string notr="true">background:#83BD75;
-font-size:10px;
+font-size:15px;
 
 padding:0px;</string>
      </property>
@@ -1344,15 +1008,15 @@ padding:0px;</string>
     <widget class="QPushButton" name="pushButton_19">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>35</y>
-       <width>61</width>
-       <height>21</height>
+       <x>11</x>
+       <y>75</y>
+       <width>171</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">background:#83BD75;
-font-size:10px;
+font-size:15px;
 
 padding:0px;</string>
      </property>
@@ -1363,15 +1027,577 @@ padding:0px;</string>
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_21">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>41</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Description</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>-apple-system</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QWidget:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QWidget:hover {
+  background-color: #2c974b;
+}
+
+QWidget:disabled {
+  background-color: #94d3a2;
+  /*border-color: rgba(27, 31, 35, .1);*/
+border:2px solid #000000;
+  color: rgba(255, 255, 255, .8);
+}
+
+.QWidget:active {
+  background-color: #298e46;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>7</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>-apple-system</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>75</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_24">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>41</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Description</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>190</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>-apple-system</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QWidget:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QWidget:hover {
+  background-color: #2c974b;
+}
+
+QWidget:disabled {
+  background-color: #94d3a2;
+  /*border-color: rgba(27, 31, 35, .1);*/
+border:2px solid #000000;
+  color: rgba(255, 255, 255, .8);
+}
+
+.QWidget:active {
+  background-color: #298e46;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>7</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>-apple-system</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>75</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_25">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>41</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Description</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>270</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>-apple-system</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QWidget:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QWidget:hover {
+  background-color: #2c974b;
+}
+
+QWidget:disabled {
+  background-color: #94d3a2;
+  /*border-color: rgba(27, 31, 35, .1);*/
+border:2px solid #000000;
+  color: rgba(255, 255, 255, .8);
+}
+
+.QWidget:active {
+  background-color: #298e46;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>7</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>-apple-system</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>75</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_26">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>41</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Description</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>355</y>
+      <width>191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>-apple-system</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  color: #fff;
+  font-family: -apple-system,system-ui,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+QWidget:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+QWidget:hover {
+  background-color: #2c974b;
+}
+
+QWidget:disabled {
+  background-color: #94d3a2;
+  /*border-color: rgba(27, 31, 35, .1);*/
+border:2px solid #000000;
+  color: rgba(255, 255, 255, .8);
+}
+
+.QWidget:active {
+  background-color: #298e46;
+}</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>7</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>-apple-system</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Edit</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>75</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_27">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>41</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:#83BD75;
+font-size:15px;
+
+padding:0px;</string>
+     </property>
+     <property name="text">
+      <string>Description</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <zorder>scrollArea</zorder>
    <zorder>groupBox_6</zorder>
    <zorder>groupBox_8</zorder>
+   <zorder>widget_5</zorder>
    <zorder>widget</zorder>
    <zorder>widget_2</zorder>
    <zorder>widget_3</zorder>
    <zorder>widget_4</zorder>
-   <zorder>widget_5</zorder>
   </widget>
  </widget>
  <resources>

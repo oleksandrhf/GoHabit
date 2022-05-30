@@ -43,6 +43,7 @@ private:
     int habit_counter;
     int thisHabitId;
     int thisUserId;
+    int arrayOfIndex[15];
 signals:
     void backed();
 private slots:
@@ -54,6 +55,8 @@ private slots:
     void on_pushButton_2_clicked();
     void on_Add_habit_button_clicked();
     void showHabitsInCombobox();
+    void fillarrOfIndex();
+    int getIdOfCombobox(int i);
 };
 
 #endif // ADDHABIT_H

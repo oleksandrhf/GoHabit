@@ -57,6 +57,7 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
    ui_Main->setupUi(this);
+   connectDB();
    FillarrOfId();
    visibleCheck();
    HideMenu();
@@ -132,6 +133,7 @@ void MainWindow::authorizeUser()
         FillarrOfId();
         visibleCheck();
         HideMenu();
+        blockCheckbox(true);
         this->show();
     }
 }
@@ -207,16 +209,17 @@ void MainWindow::on_pushButton_clicked()
 {
     TimeCheck T;
     emit arrfilled();
-    this->close();
+    this->hide();
     ah.show();
 }
 
 void MainWindow::on_go_back()
 {
     this->show();
-    ah.close();
+    ah.hide();
     FillarrOfId();
     visibleCheck();
+    blockCheckbox(true);
 }
 
 void MainWindow::on_pushButton_2_clicked()
@@ -373,33 +376,65 @@ int MainWindow::GetIdHabit(int Id_user_habit)
     return query.value(0).toInt();
 }
 
-
-
-void MainWindow::on_checkBox_stateChanged(int arg1)
+void MainWindow::setStateOfCheckBox(int i, bool state)
 {
-    TC.DateCheck(arrayOfId[0], ui_Main->checkBox->isChecked());
+    switch (i) {
+    case 0:
+        ui_Main->checkBox->setChecked(state);
+        break;
+    case 1:
+        ui_Main->checkBox_2->setChecked(state);
+        break;
+    case 2:
+        ui_Main->checkBox_3->setChecked(state);
+        break;
+    case 3:
+        ui_Main->checkBox_4->setChecked(state);
+        break;
+    case 4:
+        ui_Main->checkBox_5->setChecked(state);
+        break;
+    default:
+        break;
+    }
 }
 
-void MainWindow::on_checkBox_2_stateChanged(int arg1)
+void MainWindow::blockCheckbox(bool state)
 {
-    TC.DateCheck(arrayOfId[1], ui_Main->checkBox_2->isChecked());
+    QDateTime currDateTime, curr;
+    currDateTime = curr.currentDateTime();
+    QSqlQuery query;
+    QString str_t;
+    int check_time, time;
+    time = currDateTime.toSecsSinceEpoch();
+    for(int i = 0; i < 5; i++)
+    {
+        if(arrayOfId[i] == 0)
+        {
+            break;
+        }
+        str_t = "SELECT check_time "
+                "FROM User_Habits "
+                "WHERE id_user_habit = ";
+        str_t.append(QString::number(arrayOfId[i]));
+        str_t.append(";");
+        query.exec(str_t);
+        query.next();
+        check_time = query.value(0).toInt();
+        if(check_time == 0)
+        {
+            setStateOfCheckBox(i, false);
+        }
+        if(time - check_time < 86400)
+        {
+            setStateOfCheckBox(i, true);
+        }
+        else
+        {
+            setStateOfCheckBox(i, false);
+        }
+    }
 }
-
-void MainWindow::on_checkBox_3_stateChanged(int arg1)
-{
-    TC.DateCheck(arrayOfId[2], ui_Main->checkBox_3->isChecked());
-}
-
-void MainWindow::on_checkBox_4_stateChanged(int arg1)
-{
-    TC.DateCheck(arrayOfId[3], ui_Main->checkBox_4->isChecked());
-}
-
-void MainWindow::on_checkBox_5_stateChanged(int arg1)
-{
-    TC.DateCheck(arrayOfId[4], ui_Main->checkBox_5->isChecked());
-}
-
 
 void MainWindow::on_menuButton_clicked()
 {
@@ -527,6 +562,7 @@ void MainWindow::on_habit_deleted(int i)
     str_t.append(";");
     query.exec(str_t);
     FillarrOfId();
+    blockCheckbox(false);
     visibleCheck();
     HideMenu();
 }
@@ -541,34 +577,90 @@ void MainWindow::on_pushButton_11_clicked()
 
 void MainWindow::on_pushButton_8_clicked()
 {
-    on_habit_deleted(0);
+    on_habit_deleted(0);  
+    visibleCheck();
+    blockCheckbox(false);
+
 }
 
 
 void MainWindow::on_pushButton_13_clicked()
 {
-    on_habit_deleted(1);
+    on_habit_deleted(1); 
+    visibleCheck();
+    blockCheckbox(false);
+
 }
 
 
 void MainWindow::on_pushButton_15_clicked()
 {
     on_habit_deleted(2);
+    visibleCheck();
+    blockCheckbox(false);
+
 }
 
 
 void MainWindow::on_pushButton_17_clicked()
 {
     on_habit_deleted(3);
+    visibleCheck();
+    blockCheckbox(false);
+
 }
 
 
 void MainWindow::on_pushButton_19_clicked()
 {
     on_habit_deleted(4);
+    visibleCheck();
+    blockCheckbox(false);
+
 }
 
 void MainWindow::on_logged_out()
 {
     display();
 }
+
+
+void MainWindow::on_checkBox_clicked()
+{
+    TC.DateCheck(arrayOfId[0], ui_Main->checkBox->isChecked());
+    blockCheckbox(true);
+    visibleCheck();
+}
+
+
+void MainWindow::on_checkBox_2_clicked()
+{
+    TC.DateCheck(arrayOfId[1], ui_Main->checkBox_2->isChecked());
+    blockCheckbox(true);
+    visibleCheck();
+}
+
+
+void MainWindow::on_checkBox_3_clicked()
+{
+    TC.DateCheck(arrayOfId[2], ui_Main->checkBox_3->isChecked());
+    blockCheckbox(true);
+    visibleCheck();
+}
+
+
+void MainWindow::on_checkBox_4_clicked()
+{
+    TC.DateCheck(arrayOfId[3], ui_Main->checkBox_4->isChecked());
+    blockCheckbox(true);
+    visibleCheck();
+}
+
+
+void MainWindow::on_checkBox_5_clicked()
+{
+    TC.DateCheck(arrayOfId[4], ui_Main->checkBox_5->isChecked());
+    blockCheckbox(true);
+    visibleCheck();
+}
+
